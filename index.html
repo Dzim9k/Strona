@@ -7,6 +7,7 @@
     <title>Karczma Borowa Chata</title>
 
     <link rel="stylesheet" href="./css/style.css">
+    
 </head>
 <body>
 
@@ -15,7 +16,7 @@
     <header>
 
         <a href="#"><img src="./img/BorowaChata-Logo.png" class="logo"></a>
-        <div class="hamburger">
+        <div class="hamburger" id="hamburger">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
@@ -50,6 +51,13 @@
         <p class="banner-text-02">Borowa Chata</p>
     </div>
     </div>
+    <footer>
+        <a href="tel:512024186">512024186</a>
+        <a href="mailto:heszki2234@gmail.com">heszki2234@gmail.com</a>
+    </footer>
+
+  
+  
  
     
     <script>
@@ -57,7 +65,18 @@
         hamburger.onclick = function() {
             navBar = document.querySelector(".nav-bar");
             navBar.classList.toggle("active");
+            
+         let isactive = document.querySelector(".nav-bar.active");
+         if (isactive) {
+            document.body.style.overflow = 'hidden';
+         }
+         else {
+            document.body.style.overflow = 'auto';
+         }
         }
       </script>
+
+
+
 </body>
 </html>
