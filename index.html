@@ -16,7 +16,7 @@
     <header>
 
         <a href="#"><img src="./img/BorowaChata-Logo.png" class="logo"></a>
-        <div class="hamburger" id="myhamburger">
+        <div class="hamburger">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
@@ -26,7 +26,7 @@
             <ul>
                 <li><a href="#" class="active">Strona Główna</a></li>
                 <li><a href="#">Menu</a>
-                    <div class="dropdown" id="myDropdown">
+                    <div class="dropdown">
                     <ul>
                         <li><a href="#">Menu Główne</a></li>
                         <li><a href="#">Menu Pizza & Fast Food</a></li>
@@ -74,7 +74,20 @@
         }
         
       </script>
+<script>
+ // Pobieramy przycisk "Menu"
+const menuButton = document.querySelector('.hamburger');
 
+// Pobieramy navbar
+const navBar = document.querySelector('.nav-bar');
+
+// Dodajemy nasłuchiwacz zdarzeń na przycisku "Menu"
+menuButton.addEventListener('click', () => {
+  // Dodajemy/zdejmujemy klasę "active" na navbarze, aby otworzyć/zamknąć dropdown
+  navBar.classList.toggle('active');
+});
+
+</script>
       
 
 </body>
