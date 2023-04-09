@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karczma Borowa Chata</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body>
+
+    
+
+    <header>
+
+        <a href="#"><img src="./img/BorowaChata-Logo.png" class="logo"></a>
+        <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#" class="active">Strona Główna</a></li>
+                <li><a href="#">Menu</a>
+                    <div class="dropdown">
+                    <ul>
+                        <li><a href="#">Menu Główne</a></li>
+                        <li><a href="#">Menu Pizza & Fast Food</a></li>
+                        <li><a href="#">Menu okolicznościowe</a></li>
+                        <li><a href="#">Menu weselne</a></li>
+                        <li><a href="#">Menu komunijne</a></li>
+                        <li><a href="#">Menu biesiadne</a></li>
+                        <li><a href="#">Menu wigilijne</a></li>
+                        <li><a href="#">Menu na stypę</a></li>
+                    </ul>
+                </div>
+                </li>
+                <li><a href="#">Galeria</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+      </nav>
+    </header>
+    
+    <div class="banner-image">
+        <div class="banner-text">
+        <p class="banner-text-01">Karczma</p>
+        <p class="banner-text-02">Borowa Chata</p>
+    </div>
+    </div>
+    <footer>
+        <a href="tel:123">123</a>
+        <a href="mailto:123">123</a>
+    </footer>
+
+  
+  
+ 
+    
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+            
+         let isactive = document.querySelector(".nav-bar.active");
+         if (isactive) {
+            document.body.style.overflow = 'hidden';
+         }
+         else {
+            document.body.style.overflow = 'auto';
+         }
+        }
+      </script>
+
+
+
+</body>
+</html>
