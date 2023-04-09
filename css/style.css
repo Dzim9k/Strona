@@ -51,7 +51,7 @@ header {
   color: #FFFFFF;
 }
 
-.nav-bar ul li ul {
+.nav-bar ul li ul{
   position: absolute;
   width: 280px;
   background: #333333;

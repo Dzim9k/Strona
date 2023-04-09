@@ -56,13 +56,20 @@
         <a href="mailto:123">123</a>
     </footer>
 
-    <script>
-    document.getElementById("hamburger").addEventListener("click", function() {
-        var dropdown = document.getElementById("myDropdown");
-        dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
-      });
-      </script>
     
+    <script>
+        // Pobieramy elementy DOM
+        const hamburger = document.getElementById('hamburger');
+        const dropdown = document.getElementById('myDropdown');
+    
+        // Dodajemy nasłuchiwacz zdarzeń na ikonę hamburgera
+        hamburger.addEventListener('click', function() {
+            // Toggle klasy 'active' na ikonie hamburgera
+            this.classList.toggle('active');
+            // Toggle klasy 'active' na dropdownie
+            dropdown.classList.toggle('active');
+        });
+    </script>
  
     
     <script>
