@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  
+}
+
+
+
+header {
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #333333;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  padding: 0 6rem 0 6rem;
+}
+
+.logo {
+  width: 100px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.nav-bar ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav-bar ul li a{
+  display: block;
+  font-family: 'Vollkorn';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  color: #CDAA7C;
+  text-decoration: none;
+  padding: 0 1rem;
+}
+
+.nav-bar ul li a:hover{
+  color: #FFFFFF;
+}
+
+.nav-bar ul li a.active {
+  color: #FFFFFF;
+}
+
+.nav-bar ul li ul {
+  position: absolute;
+  width: 280px;
+  background: #333333;
+  display: none;
+  border-radius: 10px;
+  padding-top: 1.3rem;
+  padding-bottom: 1rem;
+}
+
+.nav-bar ul li ul li a{
+    font-size: 23px;
+    padding-top: 0.6rem;
+}
+
+.nav-bar ul li:hover > .dropdown ul {
+  display: initial;
+}
+
+@media only screen and (max-width: 1320px) {
+  header {
+      padding: 0 50px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  header {
+      padding: 0 30px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+
+ 
+
+    .hamburger {
+      display: block;
+      cursor: pointer;
+    }
+
+    .hamburger .line {
+      width: 30px;
+      height: 3px;
+      background: #FFFFFF;
+      margin: 6px 0;
+    }
+
+    .nav-bar {
+      position: absolute;
+      top: 80px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      background: #333333;
+      transition: 0.2s;
+      height: 0;
+      max-height: calc(100vh - 80px);
+      overflow-y: auto;
+    }
+
+    .nav-bar.active {
+      height: 100vh;
+    }
+
+
+    .nav-bar ul li a{
+      font-size: 22px;
+    }
+
+    .nav-bar ul li ul li a{
+      font-size: 22px;
+      padding-top: 0.4rem;
+  }
+
+    .nav-bar ul {
+      display: block;
+      width: fit-content;
+      margin: 30px auto 0 auto;
+      text-align: center;
+      transition: 0.5s;
+  }
+
+    .nav-bar.active {
+      opacity: 1;
+    }
+
+    .nav-bar ul li a {
+      margin-bottom: 12px;
+    }
+
+    .nav-bar ul li ul {
+      position: relative;
+      width: 100%;
+    }
+
+    
+}
+
+.banner-image {
+  background-image: url(../img/DJI_0276.JPG);
+  width: 100%;
+  height: 100vh;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.banner-text-01 {
+  font-family: 'Elsie';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 64px;
+  color: #D78F09;
+}
+
+.banner-text-02 {
+  font-family: 'Elsie';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 96px;
+  color: #FFFFFF;
+  text-shadow: -10px 8px 13px rgba(0, 0, 0, 0.75);
+}
+
+.banner-text {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
