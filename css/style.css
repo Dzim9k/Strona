@@ -51,7 +51,7 @@ header {
   color: #FFFFFF;
 }
 
-.nav-bar ul li ul{
+.nav-bar ul li ul {
   position: absolute;
   width: 280px;
   background: #333333;
@@ -65,6 +65,7 @@ header {
     font-size: 23px;
     padding-top: 0.6rem;
 }
+
 
 .nav-bar ul li:hover > .dropdown ul {
   display: initial;
@@ -117,7 +118,7 @@ header {
 
 
     .nav-bar ul li a{
-      font-size: 25px;
+      font-size: 27px;
     }
 
     .nav-bar ul li ul li a{
@@ -146,6 +147,13 @@ header {
       width: 100%;
     }
 
+    .banner-image .banner-text-01 {
+      font-size: 45px;
+    }
+    
+    .banner-image .banner-text-02 { 
+      font-size: 70px;
+    }
     
 }
 

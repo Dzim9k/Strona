@@ -16,7 +16,7 @@
     <header>
 
         <a href="#"><img src="./img/BorowaChata-Logo.png" class="logo"></a>
-        <div class="hamburger" id="hamburger">
+        <div class="hamburger" id="myhamburger">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
@@ -43,6 +43,7 @@
                 <li><a href="#">Kontakt</a></li>
             </ul>
       </nav>
+      
     </header>
     
     <div class="banner-image">
@@ -55,21 +56,6 @@
         <a href="tel:123">123</a>
         <a href="mailto:123">123</a>
     </footer>
-
-    
-    <script>
-        // Pobieramy elementy DOM
-        const hamburger = document.getElementById('hamburger');
-        const dropdown = document.getElementById('myDropdown');
-    
-        // Dodajemy nasłuchiwacz zdarzeń na ikonę hamburgera
-        hamburger.addEventListener('click', function() {
-            // Toggle klasy 'active' na ikonie hamburgera
-            this.classList.toggle('active');
-            // Toggle klasy 'active' na dropdownie
-            dropdown.classList.toggle('active');
-        });
-    </script>
  
     
     <script>
@@ -86,9 +72,10 @@
             document.body.style.overflow = 'auto';
          }
         }
+        
       </script>
 
-
+      
 
 </body>
 </html>
