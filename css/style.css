@@ -122,16 +122,16 @@ header {
 
     .nav-bar ul li a{
       font-size: 27px;
+      margin-bottom: 12px;
     }
 
     .nav-bar ul li ul li a{
-      font-size: 25px;
+      font-size: 27px;
       padding-top: 0.4rem;
   }
 
     .nav-bar ul {
       padding-bottom: 2rem;
-      padding-top: 2rem;
       display: block;
       width: fit-content;
       margin: 30px auto 0 auto;
@@ -143,20 +143,17 @@ header {
       opacity: 1;
     }
 
-    .nav-bar ul li a {
-      margin-bottom: 12px;
-    }
 
     .nav-bar ul li ul {
       position: relative;
       width: 100%;
     }
 
-    .banner-image .banner-text-01 {
+    .main-container .main-text-one {
       font-size: 45px;
     }
     
-    .banner-image .banner-text-02 { 
+    .main-container .main-text-two { 
       font-size: 70px;
     }
     
@@ -194,3 +191,143 @@ header {
   transform: translateY(-50%);
   text-align: center;
 }
+
+/*about-us*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.grid-item {
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-data {
+  padding-top: 15px; 
+  max-width: 80ch;
+}
+
+.about-title {
+  font-family: 'Vollkorn';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  color: #CDAA7C;
+}
+
+.about-description {
+  padding-top: 15px;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27px;
+  color: #595959;
+}
+
+.parent {
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+.image1 {
+  position: relative;
+  width: 550px;
+  height: 400px;
+  top: 0;
+  left: 0;
+  border: 10px #CBCBCB solid;
+}
+.image2 {
+  position: absolute;
+  width: 550px;
+  height: 400px;
+  top: 0px;
+  left: 0px;
+  border: 10px #CBCBCB solid;
+  transform: rotate(-5deg);
+}
+
+@media only screen and (max-width: 1600px) {
+  
+  .about-data {
+    padding-top: 15px; 
+    max-width: 68ch;
+  }
+
+}
+
+@media only screen and (max-width: 1320px) {
+  
+  .about-data {
+    padding-top: 15px; 
+    max-width: 72ch;
+  }
+
+}
+
+@media only screen and (max-width: 1100px) {
+  
+  .about-data {
+    padding-top: 15px; 
+    max-width: 80ch;
+  }
+
+  .grid-item {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    margin: 0 2.2rem 0 1rem;
+  }
+
+}
+
+@media only screen and (max-width: 900px) {
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  
+  .about-title {
+    font-size: 25px;
+  }
+
+  .grid-item {
+    padding: 3rem 0 0 1rem;
+  }
+  
+  .about-description {
+    padding-top: 10px;
+    font-size: 23px;
+    
+  }
+  
+  .parent {
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+  
+  .image1 {
+    width: 300px;
+    height: 250px;
+    
+  }
+  .image2 {
+    width: 300px;
+    height: 250px;
+   
+  }
+
+      
+
+}
+
+
