@@ -324,10 +324,164 @@ header {
     width: 300px;
     height: 250px;
    
-  }
-
-      
+  }  
 
 }
+
+/* services */
+
+  .services-info h1 {
+    color: #CDAA7C;
+    font-family: 'Vollkorn';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+  }
+
+  .services-info{
+    display: flex;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    justify-content: center;
+  }
+
+  
+  .services-img {
+    width: 369px;
+    height: 262px;
+    border-radius: 20px;
+  }
+
+  .services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 369px;
+    height: 262px;
+  }
+ 
+
+  .services-data {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16rem;
+  }
+
+  .services-data-second {
+    padding-top: 4.2rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16rem;
+  }
+
+  .font-img {
+    font-family: 'Vollkorn';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    padding-top: 15px;
+    align-items: center;
+    text-align: center;
+    color: #222222;
+}
+
+@media only screen and (max-width: 1620px) {
+
+  .services-data {
+    gap: 8rem;
+  }
+
+  .services-data-second {  
+    gap: 8rem;
+  }
+
+}
+
+@media only screen and (max-width: 1370px) {
+
+  .services-data {
+    gap: 4rem;
+  }
+
+  .services-data-second {  
+    gap: 4rem;
+  }
+
+}
+
+@media only screen and (max-width: 1260px) {
+
+  .services-data {
+    gap: 2rem;
+  }
+
+  .services-data-second {  
+    gap: 2rem;
+  }
+
+}
+
+  @media only screen and (max-width: 1170px) {
+
+    .services-data {
+      gap: 1rem;
+    }
+  
+    .services-data-second {  
+      gap: 1rem;
+    }
+
+  }
+
+ 
+
+  @media only screen and (max-width: 900px) {
+
+    .services-data {
+      gap: 3rem;
+    }
+  
+    .services-data-second {  
+      gap: 3rem;
+    }
+
+  }
+
+/* Food */
+
+.card-img {
+  width: 100px;
+}
+
+.card-container {
+  display: flex;
+  padding: 50px 0 50px 0;
+  justify-content: space-around;
+}
+
+.card {
+  margin-top: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.column-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.column-right {
+  display: flex;
+  flex-direction: column;
+}
+
 
 
