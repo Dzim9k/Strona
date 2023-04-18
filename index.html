@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karczma Borowa Chata</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Elsie:wght@900&family=Manrope:wght@300&family=Vollkorn&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     
 </head>
@@ -30,7 +32,7 @@
                         <li class="nav-dropdown"><a href="#">Menu</a>
                             <div class="dropdown">
                                 <ul>
-                                    <li><a href="#">Menu Główne</a></li>
+                                    <li><a href="menug.html">Menu Główne</a></li>
                                     <li><a href="#">Menu Pizza & Fast Food</a></li>
                                     <li><a href="#">Menu okolicznościowe</a></li>
                                     <li><a href="#">Menu weselne</a></li>
@@ -86,7 +88,7 @@
 
     </section>
 
-    
+    <section class="container-services">
 
     <div class="services-info">
         <h1>Nasze usługi</h1>
@@ -118,11 +120,33 @@
           <p class="font-img">Działamy od 2009 R.</p>
       </div>
     </div>
-            
-    <section>
 
+</section>
+
+<section>
+
+    <div class="flex-container-trad">
+       
+            <div class="about-data">
+                    <span class="trad-title">Tradycyjna Polska Kuchnia</span>
+                    <p class="trad-description">Naszym dodatkowym atutem są altany i tarasy wokół karczmy,
+                        które mogą pomieścić ponad 200 gości, a także duży plac zabaw, na którym Państwa pociechy 
+                        ciekawie spędzą czas na świeżym powietrzu, dając tym samym chwilę wytchnienia.</p>
+                        <a href="#" class="button menu-button">Menu</a>
+            </div>
+                    <img class="trad-img" src="./img/DJI_0276.JPG" />
+             
+
+    </div>
+       
+    
+
+</section>
+
+
+<section class="container-services">
         <div class="card-info">
-            <h1>Nasze usługi</h1>
+            <h1>Danie dnia</h1>
         </div>
 
         <div class="card-container">
@@ -181,18 +205,87 @@
     </div>
     </section>
     
-
-    
+    <section>
+        <div class="gallery">
+        <div class="services-info">
+          <span class="gallery-subtitle">Galeria</span>
+        </div>  
   
+      <div class="gallery-container">
+          <img src="./img/Rectangle 34624184.png" class="gallery-one">
+          <img src="./img/Rectangle 34624186.png" class="gallery-two">
+        </div>
+        <div class="gallery-container-2">
+          <img src="./img/Rectangle 34624185.png" class="gallery-three">
+          <img src="./img/Rectangle 34624187.png" class="gallery-four">
+          <img src="./img/Rectangle 34624188.png" class="gallery-five">
+        </div>
+    </div>
+      </section>
 
-
-
-    <footer>
-        <a href="tel:123">123</a>
-        <a href="mailto:123">123</a>
-    </footer>
+      <footer>
+        <div class="container-footer">
+        
+          <div class="column-social">
+            <img src="./img/BorowaChata-Logo.png" class="logo-footer">
+            <p class="social-name">Karczma Borowa Chata</p>
+            <p class="social-adress">UL. Jeleńska 5 Jaworzno</p>
+          </div>
+  
+            <div class="column-menu">
+          <h2 href="#">Menu</h2>
+          <a href="#">Pizza And Fast Food Menu</a>
+          <a href="#">Menu okolicznościowe</a>
+          <a href="#">Menu weselne</a>
+          <a href="#">Menu komunijne</a>
+          <a href="#">Menu biesiadne</a>
+          <a href="#">Menu wigilijne</a>
+          <a href="#">Menu na stypę</a>
+            </div>
+  
+           <div class="column-contact">
+            <h2>Kontakt</h2>
+          <P class="contact-subtitle">Telefon:</P>
+          <a href="tel:512006102" class="contact-phone">512006102</a>
+          <a href="tel:326177637" class="contact-phone">326177637</a>
+          <p class="contact-subtitle">Email:</p>
+          <a href="mailto:Karczmaborowachata@wp.pl" class="contact-email">Karczmaborowachata@wp.pl</a>
+           </div>
+  
+           <div class="column-opening">
+            <div class="opening-hours">
+                       <h2>Godziny otwarcia</h2>
+                  
+                  <table class="opening-hours-table">
+                      <tr>
+                          <td>Pon-Czw</td>
+                          <td>10:00</td>
+                          <td>-</td>
+                          <td>22:00</td>
+                      </tr>
+                      <tr>
+                          <td>Pt-Sob</td>
+                          <td>10:00</td>
+                          <td>-</td>
+                          <td>00:00</td>
+                      </tr>
+                      <tr>
+                          <td>Nied</td>
+                          <td>10:00</td>
+                          <td>-</td>
+                          <td>22:00</td>
+                      </tr>
+                  </table>
+           
+        
+        </div>
+           </div>
+           
+        </div>
+        <div class="linia-footer"></div>
+        <p class="footer-copy">© 2023, BrowaChata. All Rights Reserved</p>
     
-    
+            
     <script>
         // Mobile device hamburger
         hamburger = document.querySelector(".hamburger");

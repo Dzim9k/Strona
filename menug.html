@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karczma Borowa Chata</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Elsie:wght@900&family=Manrope:wght@300&family=Vollkorn&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body>
+
+    <header>
+                
+                <a href="index.html"><img src="./img/BorowaChata-Logo.png" class="logo" alt="Logo Karczma Borowa Chata"></a>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+
+                
+                
+                <nav class="nav-bar">
+                    <ul>
+                        <li><a href="index.html">Strona Główna</a></li>
+                        <li class="nav-dropdown"><a href="#" class="active">Menu</a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li><a href="menug.html">Menu Główne</a></li>
+                                    <li><a href="#">Menu Pizza & Fast Food</a></li>
+                                    <li><a href="#">Menu okolicznościowe</a></li>
+                                    <li><a href="#">Menu weselne</a></li>
+                                    <li><a href="#">Menu komunijne</a></li>
+                                    <li><a href="#">Menu biesiadne</a></li>
+                                    <li><a href="#">Menu wigilijne</a></li>
+                                    <li><a href="#">Menu na stypę</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="Galeria.html">Galeria</a></li>
+                        <li><a href="Kontakt.html">Kontakt</a></li>
+                    </ul>
+            </nav>
+      
+    </header>
+<section>
+
+        <div class="menu-header-container">
+            <div class="menu-header-section">
+                <h3>MENU</h3>
+            </div>
+        </div>
+
+</section>
+
+<section>
+        <div class="menu-container">
+            
+                <div class="menu-left">
+                    <div class="karta">
+                            <img src="./img/czarny 6.png" alt="" class="img-rozetka">
+                        <div class="tekst">
+                            <button data-id="first-tab" onclick="showInfo('first-tab')" class="menu-tab menu-tab-active">Korytko</button>
+                        </div>
+                    </div>
+                    <div class="karta">
+                        <img src="./img/czarny 6.png" alt="" class="img-rozetka">
+                    <div class="tekst">
+                        <button data-id="first-tab" onclick="showInfo('second-tab')" class="menu-tab">Śniadania</button>
+                    </div>
+                </div>
+                
+                <div class="karta">
+                    <img src="./img/czarny 6.png" alt="" class="img-rozetka">
+                <div class="tekst">
+                    <button data-id="first-tab" onclick="showInfo('third-tab')" class="menu-tab">Przystawki</button>
+                </div>
+            </div>
+            <div class="karta">
+                <img src="./img/czarny 6.png" alt="" class="img-rozetka">
+            <div class="tekst">
+                <button data-id="first-tab" onclick="showInfo('four-tab')" class="menu-tab">Zupy</button>
+            </div>
+        </div>
+        <div class="karta">
+            <img src="./img/czarny 6.png" alt="" class="img-rozetka">
+        <div class="tekst">
+            <button data-id="first-tab" onclick="showInfo('five-tab')" class="menu-tab">Dania obiadowe</button>
+        </div>
+    </div>
+    <div class="karta">
+        <img src="./img/czarny 6.png" alt="" class="img-rozetka">
+    <div class="tekst">
+        <button data-id="first-tab" onclick="showInfo('six-tab')" class="menu-tab">Dania z grilla</button>
+    </div>
+</div>
+<div class="karta">
+    <img src="./img/czarny 6.png" alt="" class="img-rozetka">
+<div class="tekst">
+    <button data-id="first-tab" onclick="showInfo('seven-tab')" class="menu-tab">Dania rybne</button>
+</div>
+</div>
+<div class="karta">
+    <img src="./img/czarny 6.png" alt="" class="img-rozetka">
+<div class="tekst">
+    <button data-id="first-tab" onclick="showInfo('eight-tab')" class="menu-tab">Dodatki ku misce</button>
+</div>
+</div>
+<div class="karta">
+    <img src="./img/czarny 6.png" alt="" class="img-rozetka">
+<div class="tekst">
+    <button data-id="first-tab" onclick="showInfo('nine-tab')" class="menu-tab">Surówki i sałatki</button>
+</div>
+</div>
+<div class="karta">
+    <img src="./img/czarny 6.png" alt="" class="img-rozetka">
+<div class="tekst">
+    <button data-id="first-tab" onclick="showInfo('ten-tab')" class="menu-tab">Pierogi</button>
+</div>
+</div>
+<div class="karta">
+    <img src="./img/czarny 6.png" alt="" class="img-rozetka">
+<div class="tekst">
+    <button data-id="first-tab" onclick="showInfo('eleven-tab')" class="menu-tab">Desery</button>
+</div>
+</div>
+<div class="karta">
+    <img src="./img/czarny 6.png" alt="" class="img-rozetka">
+<div class="tekst">
+    <button data-id="first-tab" onclick="showInfo('twelve-tab')" class="menu-tab">Napoje</button>
+</div>
+</div>
+<div class="karta">
+    <img src="./img/czarny 6.png" alt="" class="img-rozetka">
+<div class="tekst">
+    <button data-id="first-tab" onclick="showInfo('thirteen-tab')" class="menu-tab">Drinki alkoholowe</button>
+</div>
+</div>
+<div class="karta">
+    <img src="./img/czarny 6.png" alt="" class="img-rozetka">
+<div class="tekst">
+    <button data-id="first-tab" onclick="showInfo('fourteen-tab')" class="menu-tab">Grzańce</button>
+</div>
+</div>
+<div class="karta">
+    <img src="./img/czarny 6.png" alt="" class="img-rozetka">
+<div class="tekst">
+    <button data-id="first-tab" onclick="showInfo('fifteen-tab')" class="menu-tab">Piwo</button>
+</div>
+</div>
+<div class="karta">
+    <img src="./img/czarny 6.png" alt="" class="img-rozetka">
+<div class="tekst">
+    <button data-id="first-tab" onclick="showInfo('sixteen-tab')" class="menu-tab">Wino</button>
+</div>
+</div>
+<div class="karta">
+    <img src="./img/czarny 6.png" alt="" class="img-rozetka">
+<div class="tekst">
+    <button data-id="first-tab" onclick="showInfo('seventeen-tab')" class="menu-tab">Wódka</button>
+</div>
+</div>
+                </div>
+               
+                <div class="menu-right">
+                    
+                    <div class="menu-korytko" id="first-tab">
+
+                        <h1>KORYTKO DLA 2 OSÓB </h1>
+                        <p>Karczek 2 sztuki, schab 2 sztuki, filet z 
+                            grilla 2 sztuki, boczek 2 sztuki, 
+                            kiełbasa 2 sztuki, kaszanka 2 sztuki, 
+                            ziemniaki z kociołka, kapusta 
+                            zasmażana, 6 pierogów lub pieczarki 
+                            panierowane zamiennie, surówki, sos 
+                            czosnkowy.</p>
+
+                            <h1>KORYTKO DLA 4 OSÓB</h1>
+                            <p>Karczek 2 sztuki, schab 2 sztuki, filet z
+                                grilla 2 sztuki, boczek 2 sztuki, 
+                                kiełbasa 2 sztuki, kaszanka 2 sztuki,
+                                ziemniaki z kociołka, kapusta
+                                zasmażana, 6 pierogów lub pieczarki
+                                panierowane zamiennie, surówki, sos
+                                czosnkowy.</p>
+                    </div>
+                    <div class="menu-korytko" id="second-tab" style="display: none;">
+
+                        <h1>JAJECZNICA NA MAŚLE</h1>
+                        <h1>JAJECZNICA NA SZYNCE</h1>
+                        <h1>OMLET Z SZYNKA I SEREM</h1>
+                        <h1>KASZANKA Z CEBULĄ</h1>
+                        <h1>KIEŁBASKA SMAŻONA Z CEBULKĄ</h1>
+                        
+                    </div>
+                    <div class="menu-korytko" id="third-tab" style="display: none;">
+
+                        <h1>ŚLEDŹ W OLEJU W CEBULCE</h1>
+                        <h1>CHLYB ZE SMOLCEM I OGÓREM KISONYM</h1>
+                        <h1>OSCYPEK Z ŻURAWINĄ</h1>
+                        <h1>ŚLEDŹ PO JAPOŃSKU</h1>
+                        <h1>PIECZARKI PANIEROWANE</h1>
+                        
+                    </div>
+                    <div class="menu-korytko" id="four-tab" style="display: none;">
+
+                        <h1>ROSÓŁ Z MAKARONEM /OKOŁO 500 ML/</h1>
+                        <h1>POMIDOROWA Z RYŻEM /OKOŁO 500 ML/</h1>
+                        <h1>GRZYBOWA Z ŁAZANKAMI /OKOŁO 500 ML/</h1>
+                        <h1>KREM Z BOROWIKÓW Z GROSZKIEM PTYSIOWYM /OKOŁO 500 ML/</h1>
+                        <h1>ŻUREK Z KIEŁBASĄ I JAJKIEM /OKOŁO 500 ML/</h1>
+                        <h1>ŻUREK Z JAJKIEM /OKOŁO 500 ML/</h1>
+                        <h1>ŻUREK SOLO /KUBEK/</h1>
+                        <h1>KWAŚNICA /OKOŁO 500 ML/</h1>
+                        <h1>BARSZCZ Z USZKAMI /OKOŁO 500 ML/</h1>
+                        <h1>BARSZCZ ZABIELANY Z JAJKIEM /OKOŁO 500 ML/</h1>
+                        <h1>BARSZCZ Z KROKIETEM</h1>
+                        <h1>KROKIET SOLO /OKOŁO 350 G/</h1>
+                        <h1>BARSZCZ SOLO /KUBEK/</h1>
+                        <h1>FLACZKI /OKOŁO 500 ML/</h1>
+                        <h1>FASOLKA PO BRETOŃSKU /OKOŁO 500 ML/</h1>
+                        <h1>LECZO /OKOŁO 500 ML/</h1>
+                        <h1>BIGOS /OKOŁO 500 G/</h1>
+                        
+                    </div>
+                    <div class="menu-korytko" id="five-tab" style="display: none;">
+
+                        <h1>KOTLET SCHABOWY PANIEROWANY /OKOŁO 300 G/</h1>
+                        <h1>KOTLET DROBIOWY PANIEROWANY /OKOŁO 300 G/</h1>
+                        <h1>KULKA FASZERWONA NA SZPADKACH /OKOŁO 300 G/</h1>
+                        <h1>SCHAB SZEFA KUCHNI /OKOŁO 300 G/</h1>
+                        <h1>KOTLET DE VOLAILLE Z SEREM /OKOŁO 300 G/</h1>
+                        
+                    </div>
+                    <div class="menu-korytko" id="six-tab" style="display: none;">
+
+                        <h1>KARCZEK /100 G/</h1>
+                        <h1>SZASZŁYK Z GRILLA /100 G/</h1>
+                        <p>Z polędwicy wieprzowej na patyku podawany.</p>
+                        <h1>ŻEBERKA Z GRILLA /100 G/</h1>
+                        <h1>BOCZEK Z GRILLA /100 G/</h1>
+                        <h1>GOLONKO /100 G/</h1>
+                        
+                    </div>
+                    <div class="menu-korytko" id="seven-tab" style="display: none;">
+
+                        <h1>FILET Z DORSZA /100 G/</h1>
+                        <h1>PSTRĄG SAUTE W MĄCE SMAŻONY /100 G/</h1>
+                        
+                        
+                    </div>
+                    <div class="menu-korytko" id="eight-tab" style="display: none;">
+
+                        <h1>ZIEMNIAKI GOTOWANE</h1>
+                        <h1>ZIEMNIAKI OPIEKANE - KSIĘŻYCE /OKOŁO 400 G/</h1>
+                        
+                        
+                        
+                    </div>
+
+                    <div class="menu-korytko" id="nine-tab" style="display: none;">
+
+                        <h1>SURÓWKA Z KAPUSTY BIAŁEJ</h1>
+                        <h1>SURÓWKA Z KAPUSTY CZERWONEJ</h1>
+                       
+                        
+                    </div>
+
+                    <div class="menu-korytko" id="ten-tab" style="display: none;">
+
+                        
+                        <h1>PIEROGI Z KAPUSTĄ I MIĘSEM /14 SZT./</h1>
+                        
+                    </div>
+                    <div class="menu-korytko" id="eleven-tab" style="display: none;">
+
+                        <h1>LÓD W WAFELKU</h1>
+                        <h1>LODY OWOCOWE</h1>
+                       
+                        
+                    </div>
+                    <div class="menu-korytko" id="twelve-tab" style="display: none;">
+
+                        <h1>HERBATA Z CYTRYNĄ</h1>
+                        <h1>HERBATA Z SOKIEM MALINOWYM</h1>
+                       
+                        
+                    </div>
+                    <div class="menu-korytko" id="thirteen-tab" style="display: none;">
+
+                        <h1>MALIBU</h1>
+                        <h1>ŚNIEŻNA KULA</h1>
+                       
+                        
+                    </div>
+                    <div class="menu-korytko" id="fourteen-tab" style="display: none;">
+
+                        <h1>GRZANE WINO</h1>
+                        <h1>PIWO GRZANE</h1>
+                       
+                        
+                    </div>
+                    <div class="menu-korytko" id="fifteen-tab" style="display: none;">
+
+                        <h1>TYSKIE Z BECZKI /0,3 L/</h1>
+                        <h1>TYSKIE Z BECZKI /0,5 L/</h1>
+                       
+                        
+                    </div>
+                    <div class="menu-korytko" id="sixteen-tab" style="display: none;">
+
+                        <h1>MARTINI BIANCO /100 ML/</h1>
+                        <h1>CARLO ROSSI /100 ML/</h1>
+                       
+                        
+                    </div>
+                    <div class="menu-korytko" id="seventeen-tab" style="display: none;">
+
+                        <h1>BOLS /50 ML/</h1>
+                        <h1>WYBOROWA /50 ML/</h1>
+                       
+                        
+                    </div>
+                </div>
+          
+        </div>
+
+</section>
+<footer>
+    <div class="container-footer">
+    
+      <div class="column-social">
+        <img src="./img/BorowaChata-Logo.png" class="logo-footer">
+        <p class="social-name">Karczma Borowa Chata</p>
+        <p class="social-adress">UL. Jeleńska 5 Jaworzno</p>
+      </div>
+
+        <div class="column-menu">
+      <h2 href="#">Menu</h2>
+      <a href="#">Pizza And Fast Food Menu</a>
+      <a href="#">Menu okolicznościowe</a>
+      <a href="#">Menu weselne</a>
+      <a href="#">Menu komunijne</a>
+      <a href="#">Menu biesiadne</a>
+      <a href="#">Menu wigilijne</a>
+      <a href="#">Menu na stypę</a>
+        </div>
+
+       <div class="column-contact">
+        <h2>Kontakt</h2>
+      <P class="contact-subtitle">Telefon:</P>
+      <a href="tel:512006102" class="contact-phone">512006102</a>
+      <a href="tel:326177637" class="contact-phone">326177637</a>
+      <p class="contact-subtitle">Email:</p>
+      <a href="mailto:Karczmaborowachata@wp.pl" class="contact-email">Karczmaborowachata@wp.pl</a>
+       </div>
+
+       <div class="column-opening">
+        <div class="opening-hours">
+                   <h2>Godziny otwarcia</h2>
+              
+              <table class="opening-hours-table">
+                  <tr>
+                      <td>Pon-Czw</td>
+                      <td>10:00</td>
+                      <td>-</td>
+                      <td>22:00</td>
+                  </tr>
+                  <tr>
+                      <td>Pt-Sob</td>
+                      <td>10:00</td>
+                      <td>-</td>
+                      <td>00:00</td>
+                  </tr>
+                  <tr>
+                      <td>Nied</td>
+                      <td>10:00</td>
+                      <td>-</td>
+                      <td>22:00</td>
+                  </tr>
+              </table>
+       
+    
+    </div>
+       </div>
+       
+    </div>
+    <div class="linia-footer"></div>
+    <p class="footer-copy">© 2023, BrowaChata. All Rights Reserved</p>
+    
+            
+    <script>
+        // Mobile device hamburger
+        hamburger = document.querySelector(".hamburger");
+
+        hamburger.onclick = function() {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+            
+            let isactive = document.querySelector(".nav-bar.active");
+            if (isactive) {
+                document.body.style.overflow = 'hidden';
+            }
+            else {
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        // dropdown menu
+        dropdownMenu = document.querySelector(".nav-dropdown");
+        dropdownMenu.onclick = function() {
+            dropdownContainer = document.querySelector(".nav-dropdown .dropdown");
+            dropdownContainer.classList.toggle("dropdown-active"); 
+        }
+
+        
+    // Zamykanie menu dropdown po kliknięciu gdziekolwiek na stronie
+    document.addEventListener('click', function(event) {
+        var dropdownContainer = document.querySelector('.nav-dropdown .dropdown');
+        if (dropdownContainer.classList.contains('dropdown-active') && !event.target.closest('.nav-dropdown')) {
+            dropdownContainer.classList.remove('dropdown-active');
+        }
+    });
+
+
+    const menuSection = document.querySelectorAll('.menu-korytko')
+    const menuTabs = document.querySelectorAll('.menu-tab')
+
+    const showInfo = id => {
+
+        menuSection.forEach(section => section.style.display = 'none')
+        menuTabs.forEach(tab => tab.classList.remove('menu-tab-active'))
+
+        document.getElementById(id).style.display = 'block'
+
+        const currentActiveButton = document.querySelector('[data-id=${id}]')
+
+        currentActiveButton.classList.add('menu-tab-active')
+    }
+
+
+      </script>
+
+      
+
+</body>
+</html>
