@@ -1,0 +1,690 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0; 
+    text-decoration: none;
+  }
+
+  body {
+    background-color: #fffff0;
+  }
+
+  .container-services {
+    background-image: url(../img/tlo1.png);
+    background-color: #d4c6b9;
+  }
+
+  header {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background: #333333;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+  
+  .logo {
+    width: 100px;
+  }
+  
+  .hamburger {
+    display: none;
+  }
+  
+  .nav-bar ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-bar ul li a{
+    display: block;
+    font-family: 'Vollkorn';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    color: #CDAA7C;
+    text-decoration: none;
+    padding: 0 0 0 2rem;
+  }
+  
+  .nav-bar ul li a:hover{
+    color: #FFFFFF;
+  }
+  
+  .nav-bar ul li a.active {
+    color: #FFFFFF;
+  }
+  
+  .nav-bar ul li ul {
+    position: absolute;
+    width: 280px;
+    background: #333333;
+    display: none;
+    border-radius: 10px;
+    padding-top: 1.3rem;
+    padding-bottom: 1rem;
+  }
+  
+  .nav-bar ul li ul li a{
+    font-size: 23px;
+    padding-top: 0.6rem;
+  }
+  
+  .nav-bar .dropdown-active ul {
+    display: initial;
+  }
+  
+  
+  
+  @media only screen and (max-width: 900px) {
+  
+      .hamburger {
+        display: block;
+        cursor: pointer;
+      }
+  
+      .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background: #FFFFFF;
+        margin: 6px 0;
+      }
+  
+      .nav-bar {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background: #333333;
+        transition: 0.2s;
+        height: 0;
+        max-height: calc(100vh - 80px);
+        overflow-y: auto;
+      }
+  
+      .nav-bar.active {
+        height: 100vh;
+      }
+  
+  
+      .nav-bar ul li a{
+        font-size: 27px;
+        margin-bottom: 12px;
+      }
+  
+      .nav-bar ul li ul li a{
+        font-size: 27px;
+        padding-top: 0.4rem;
+    }
+  
+      .nav-bar ul {
+        padding-bottom: 2rem;
+        display: block;
+        width: fit-content;
+        margin: 30px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+    }
+  
+      .nav-bar.active {
+        opacity: 1;
+      }
+  
+  
+      .nav-bar ul li ul {
+        position: relative;
+        width: 100%;
+      }
+  
+      .main-container .main-text-one {
+        font-size: 45px;
+      }
+      
+      .main-container .main-text-two { 
+        font-size: 70px;
+      }
+      
+  }
+
+  /*Head-section*/
+
+  .main-image {
+    background-image: url(../img/DJI_0276.JPG);
+    width: 100%;
+    height: 100vh;
+    background-size:cover;
+    background-repeat: no-repeat;
+  }
+  
+  .main-text-one {
+    font-family: 'Elsie';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 80px;
+    color: #D78F09;
+  }
+  
+  .main-text-two {
+    font-family: 'Elsie';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 110px;
+    color: #FFFFFF;
+    text-shadow: -10px 8px 13px rgba(0, 0, 0, 0.75);
+  }
+  
+  .main-container {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+  }
+
+  /*about-us*/
+  
+  .flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    gap: 13.333%;
+    padding-left: 8.2%;
+    padding-right: 9.23%;
+  }
+
+  .about-title {
+    font-family: 'Vollkorn';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: #CDAA7C;
+    background-color: #333333;
+    padding: 10px;
+  }
+  
+  .about-description {
+    padding-top: 15px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: #595959;
+  }
+
+  .parent {
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+  
+  .image1 {
+    position: relative;
+    width: 460px;
+    height: 355px;
+    top: 0;
+    left: 0;
+    border: 10px #CBCBCB solid;
+  }
+  .image2 {
+    position: absolute;
+    width: 460px;
+    height: 355px;
+    top: 0px;
+    left: 0px;
+    border: 10px #CBCBCB solid;
+    transform: rotate(-5deg);
+  }
+
+  /*services*/
+
+  .services-info{
+    display: flex;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    justify-content: center;
+  }
+
+  .services-info h1 {
+    color: #CDAA7C;
+    font-family: 'Vollkorn';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    background-color: #333333;
+    padding: 10px;
+  }
+
+  .font-img {
+    font-family: 'Vollkorn';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    padding-top: 12px;
+    color: #222222;
+}
+
+  .services-img {
+    width: 320px;
+    height: 227px;
+    border-radius: 20px;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+  }
+
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .services-data {
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    justify-items: center;
+    justify-content: space-between;
+    row-gap: 3.5rem;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 5rem;
+  }
+
+  /*traditional*/
+
+  .trad-title {
+    font-family: 'Vollkorn';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    background-color: #333333;
+    padding: 6px;
+    color: #CDAA7C;
+    }
+
+   .trad-description{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #595959;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    }
+
+    .trad-img {
+        width: 460px;
+        height: 320px;
+        border-radius: .5rem;
+        }
+    
+    .flex-container-trad {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 8%;
+        padding-right: 8%;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        gap: 13.333%;
+    }
+
+    .button{
+    display: inline-block;
+    background: linear-gradient(177.2deg, #FF9E01 -25.41%, rgba(254, 202, 0, 0) 349.37%);
+    color: black;
+    padding: 0.75rem 2.2rem;
+    border-radius: .5rem;
+    transition: .3s;
+    }
+
+    .menu-button{
+    border-radius: 0.5rem;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #222222;
+    }
+
+
+/* Food */
+
+.card-info h1 {
+    font-family: 'Vollkorn';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    color: #CDAA7C;
+    background-color: #333333;
+    padding: 10px;
+  }
+
+.card-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0 1rem 0;
+  }
+
+  .card{
+    display: flex;
+    align-items: center;
+    padding-top: 60px;
+  }
+
+  .column-left {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .column-right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-content {
+    padding-left: 0.6rem;
+  }
+
+  .card-content h2 {
+    font-family: 'Vollkorn';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    color: #222222;
+  }
+
+  .card-content p {
+    font-family: 'Vollkorn';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    color: #999999;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 5rem;
+  }
+
+  .linia{
+    display: inline;
+    align-items: center;
+  }
+
+  .card .linia:before {
+    content:" ";
+    display:inline-block;
+    width: 100px;
+    height:3.5px;
+    border-top:2px solid black;
+    border-bottom:2px solid black;
+    margin:0 11px 3px;
+  }
+
+/*gallery*/
+
+                .gallery-container {
+                    padding-top: 5rem;
+                    padding-bottom: 5rem;
+                    padding-left: 8%;
+                    padding-right: 8%;
+                }
+
+                .grid {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    align-items: center;
+                    justify-content: center;
+                    column-gap: 1%;
+                }
+                .gallery-bg {
+                    background-image: url(../img/Rectangle\ 34624186.png);
+                    width: auto;
+                    height: 550px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+
+/*footer*/
+        
+footer {
+        
+    padding-top: 30px;
+    background: #282828;
+}
+
+.container-footer {
+    padding-right: 8%;
+    padding-left: 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.logo-footer {
+    width: 145px;
+}
+
+.column-social {  
+    flex-direction: column;
+}
+
+.social-name {
+        font-family: 'Vollkorn';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        color: #FFFFFF;
+}
+
+.social-adress {
+        font-family: 'Vollkorn';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        color: #CDAA7C;
+}
+
+.column-menu h2 {
+    font-family: 'Vollkorn';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    padding-bottom: 5px;
+}
+
+.column-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.column-menu a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #999999;
+}
+
+.column-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.column-contact h2 {
+    font-family: 'Vollkorn';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    padding-bottom: 5px;
+}
+
+.contact-subtitle {
+    font-family: 'Vollkorn';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #CDAA7C;
+}
+
+.contact-phone {
+    font-family: 'Vollkorn';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    color: #999999;
+}
+
+.contact-email {
+    font-family: 'Vollkorn';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19px;
+    color: #999999;
+}
+
+.column-opening {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.opening-hours h2 {
+    padding-bottom: 10px;
+    font-family: 'Vollkorn';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #FFFFFF;
+    text-align:center;
+}
+
+.opening-hours {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 26px;
+    color: #999999;
+}
+
+.opening-hours-table tr td {
+    padding: 5px;
+}
+
+.linia-footer {
+    margin-top: 30px;
+    border: 1px solid #6C6C6C;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.footer-copy {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: #FFFFFF;
+    line-height: 50px;
+}
+
+
+
+/*-----------MENU-----------*/
+
+.menu-header-container {
+    background-image: url(../img/menu.png);
+    width: 100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    min-height: 35vh;
+  }
+
+  .menu-header-section h3{
+    font-family: 'Elsie';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px; 
+    color: #FFFFFF;
+  }
+
+  .menu-header-section {
+    width: 100%;
+    position: absolute;
+    top: 18%;
+    transform: translateY(-18%);
+    text-align: center;
+  }
+
+  .menu-container {
+    background-image: url(../img/pexels-fwstudio-172277\ 1.png);
+    width: 100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    padding-left: 6%;
+    padding-right: 6%;
+    display: flex;
+    gap:5%
+  }
+
+  .img-rozetka {
+    height: 25px;
+  }
+
+  .karta {
+    padding-top: 6px;
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-tab{
+    font-family: 'Vollkorn';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #040404;
+    margin-left: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .menu-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 25%;
+  }
+
+  .menu-right {
+    display: flex;
+     width: 75%;
+  } 
+
+  .menu-korytko h1{
+    padding-top: 20px;
+      }
