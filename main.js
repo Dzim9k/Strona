@@ -30,11 +30,13 @@ document.addEventListener('click', function(event) {
  }
 });
 
+
+// zmiana zdjęć na stronie
  const image1 = document.querySelector('.image1');
  const image2 = document.querySelector('.image2');
 
  // Zdefiniuj tablicę z linkami do kolejnych zdjęć
- const images = ['./img/DJI_0276.JPG', './img/karczma1.jpg'];
+ const images = ['./img/DJI_1920.png', './img/karczma1920.png'];
  let currentImage = 0;
 
  // Funkcja do zmiany zdjęcia co 5 sekund
