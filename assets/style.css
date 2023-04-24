@@ -9,6 +9,7 @@
     background-color: #fffff0;
   }
 
+
   .container-services {
     background-image: url(../img/tlo1.png);
     background-color: #d4c6b9;
@@ -44,7 +45,7 @@
     display: block;
     font-family: 'Vollkorn';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 25px;
     color: #CDAA7C;
     text-decoration: none;
@@ -159,7 +160,7 @@
     background-repeat: no-repeat;
   }
   
-  .main-text-one {
+  .main-container h3 {
     font-family: 'Elsie';
     font-style: normal;
     font-weight: 900;
@@ -167,7 +168,7 @@
     color: #D78F09;
   }
   
-  .main-text-two {
+  .main-container h2 {
     font-family: 'Elsie';
     font-style: normal;
     font-weight: 900;
@@ -196,14 +197,15 @@
     padding-right: 8.9%;
   }
 
-  .about-title {
+  .about-data h1 {
+    display: table;
     font-family: 'Vollkorn';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 30px;
     color: #CDAA7C;
     background-color: #333333;
-    padding: 10px;
+    padding: 6px;
   }
   
   .about-description {
@@ -239,12 +241,6 @@
     transform: rotate(-5deg);
   }
 
-  @media screen and (max-width: 992px) and (min-width: 1199px) {
-
-        
-
-  }
-
   /*services*/
 
   .services-info{
@@ -258,10 +254,10 @@
     color: #CDAA7C;
     font-family: 'Vollkorn';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 30px;
     background-color: #333333;
-    padding: 10px;
+    padding: 6px;
   }
 
   .font-img {
@@ -316,7 +312,7 @@
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 30px;
     color: #595959;
     padding-bottom: 20px;
@@ -351,7 +347,7 @@
 
     .menu-button{
     border-radius: 0.5rem;
-    font-family: 'Roboto';
+    font-family: 'Vollkorn';
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -368,7 +364,7 @@
     font-size: 30px;
     color: #CDAA7C;
     background-color: #333333;
-    padding: 10px;
+    padding: 6px;
   }
 
 .card-info {
@@ -440,12 +436,29 @@
 
 /*gallery*/
 
+.gallery-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+.gallery-title h1 {
+  font-family: 'Vollkorn';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  background-color: #333333;
+  padding: 6px;
+  color: #CDAA7C;   
+}
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding-left: 8%;
   padding-right: 8%;
-  padding-top: 5rem;
+  padding-top: 3rem;
   padding-bottom: 5rem;
   row-gap: 2%;
   column-gap: 2%;
