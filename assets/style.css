@@ -11,8 +11,7 @@
 
 
   .container-services {
-    background-image: url(../img/tlo2.png);
-    background-color: #c9bbad;
+    background-color: #FFDAB9
   }
 
   header {
@@ -208,7 +207,7 @@
   }
 
   .about-data h1 {
-    display: table;
+    display: inline-flex;
     font-family: 'Vollkorn';
     font-style: normal;
     font-weight: 600;
@@ -322,6 +321,16 @@
     .parent {
       display: none;
     }
+
+    .mobile-about{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .about-description {
+      text-align: center;
+    }
   }
 
   /*services*/
@@ -355,7 +364,6 @@
     max-width: 100%;
     height: auto;
     border-radius: 20px;
-   
   }
 
   .services {
@@ -388,6 +396,7 @@
   
     .font-img {
       font-size: 20px;
+      text-align: center;
   }
   
     .services-data {
@@ -399,19 +408,31 @@
    
   }
 
-  @media screen and (max-width: 771px) {
+  @media screen and (max-width: 550px) {
+    
+    .services-info{
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+  
+    .services-info h1 {
+      font-size: 25px;
+    }
   
     .font-img {
-      font-size: 19px;
+      font-size: 20px;
+      text-align: center;
   }
   
     .services-data {
       grid-template-columns: repeat(1, 1fr);
+      column-gap: 5%;
       row-gap: 1%;
-      padding-bottom: 25%;
+      padding-bottom: 8.5rem;
     }
-
+   
   }
+ 
   
 
   /*traditional*/
@@ -508,6 +529,16 @@
           align-items: center;
         }
         
+        .trad-about-cos {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .trad-description {
+          text-align: center;
+        }
+
     }
   
     
@@ -927,54 +958,63 @@ footer {
     text-align: center;
   }
 
-  .menu-container {
-    background-image: url(../img/pexels-fwstudio-172277\ 1.png);
-    width: 100%;
-    background-size:cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    padding-top: 3rem;
-    padding-bottom: 2rem;
-    padding-left: 6%;
-    padding-right: 6%;
-    display: flex;
-    gap:5%
-  }
-
-  .img-rozetka {
-    height: 25px;
-  }
-
-  .karta {
-    padding-top: 6px;
-    display: flex;
-    align-items: center;
-  }
-
-  .menu-tab{
-    font-family: 'Vollkorn';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    color: #040404;
-    margin-left: 20px;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-
-  .menu-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 25%;
-  }
-
-  .menu-right {
-    display: flex;
-     width: 75%;
-  } 
-
-  .menu-korytko h1{
-    padding-top: 20px;
-      }
+  .menu-header {
+    width: 80%;
+    padding-left: 7rem;
+   }
+  
+    .container-menuu{
+      padding-top: 5rem;
+      display: flex;
+      padding-left: 3%;
+      padding-right: 3%;
+    }
+  
+  .restaurant-menu {
+      width: 100%;
+      margin: 0 auto;
+      padding-left: 2rem;
+    }
+  
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .menu-item:not(:first-child) {
+      margin-top: 15px;
+    }
+  
+    .menu-desc {
+      margin-top: 5px;
+      width: 60%;
+    }
+  
+    .menu-title {
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+  
+    .menu-price {
+      white-space: nowrap;
+    }
+  
+    .restaurant-container {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .karta {
+      display: flex;
+      align-items: center;
+      padding-left: 10px;
+      padding-top: 0.6rem;
+    }
+  
+    .img-rozetka {
+      width: 36px;
+    }
+  
+    .tekst {
+      margin-left: 10px;
+    }
