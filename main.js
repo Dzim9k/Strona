@@ -36,7 +36,7 @@ document.addEventListener('click', function(event) {
  const image2 = document.querySelector('.image2');
 
  // Zdefiniuj tablicę z linkami do kolejnych zdjęć
- const images = ['./img/DJI_1920.png', './img/karczma1920.png'];
+ const images = ['./img/altanatest.png', './img/karczmatest.png'];
  let currentImage = 0;
 
  // Funkcja do zmiany zdjęcia co 5 sekund
@@ -49,7 +49,7 @@ document.addEventListener('click', function(event) {
  // Uruchom funkcję po załadowaniu strony
  window.addEventListener('load', changeImage);
 
- const menuSection = document.querySelectorAll('.menu-korytko')
+ const menuSection = document.querySelectorAll('.restaurant-menu')
  const menuTabs = document.querySelectorAll('.menu-tab')
 
  const showInfo = id => {
@@ -57,7 +57,7 @@ document.addEventListener('click', function(event) {
      menuSection.forEach(section => section.style.display = 'none')
      menuTabs.forEach(tab => tab.classList.remove('menu-tab-active'))
 
-     document.getElementById(id).style.display = 'block'
+     document.getElementById(id).style.display = 'flex'
 
      const currentActiveButton = document.querySelector('[data-id=${id}]')
 
