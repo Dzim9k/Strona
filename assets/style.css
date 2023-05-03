@@ -50,6 +50,8 @@
     text-decoration: none;
     padding: 0 0 0 2rem;
   }
+
+  
   
   .nav-bar ul li a:hover{
     color: #FFFFFF;
@@ -72,6 +74,7 @@
   .nav-bar ul li ul li a{
     font-size: 23px;
     padding-top: 0.6rem;
+    padding-left: 1.3rem;
   }
   
   .nav-bar .dropdown-active ul {
@@ -935,12 +938,17 @@ footer {
 
 /*-----------MENU-----------*/
 
+
 .menu-header-container {
     background-image: url(../img/menu.png);
     width: 100%;
     background-size:cover;
     background-repeat: no-repeat;
-    min-height: 35vh;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
   }
 
   .menu-header-section h3{
@@ -951,18 +959,12 @@ footer {
     color: #FFFFFF;
   }
 
-  .menu-header-section {
-    width: 100%;
-    position: absolute;
-    top: 18%;
-    transform: translateY(-18%);
-    text-align: center;
-  }
-
   .container {
+    padding-top: 3rem;
     display: flex;
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 2rem;
   }
 
   .menu-container {
@@ -977,21 +979,24 @@ footer {
   }
 
   .karta:not(:first-child) {
-    margin-top: 10px;
+    margin-top: 5px;
   }
 
   .img-rozetka {
-    width: 32px;
+    width: 25px;
   }
 
   .tekst {
     margin-left: 10px;
+   
   }
 
   .tekst button {
     background: none;
     border: none;
     cursor: pointer;
+    white-space: nowrap;
+    font-size: 19px;
   }
 
   .restaurant-menu {
@@ -1005,9 +1010,17 @@ footer {
     justify-content: space-between;
   }
 
+  .menu-title-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+    font-size: 36px;
+  }
+
   .menu-header {
-    width: 80%;
-    padding-left: 7rem;
+    width: 100%;
+    padding-left: 16%;
    }
 
   .menu-item:not(:first-child) {
@@ -1016,16 +1029,34 @@ footer {
 
   .menu-title {
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 20px;
     white-space: nowrap;
   }
 
   .menu-desc {
     margin-top: 5px;
-    width: 60%;
+    width: 65%;
+    font-size: 18px;
   }
 
   .menu-price {
     white-space: nowrap;
+    font-size: 18px;
   }
 
+
+  @media screen and (max-width: 1200px) {
+    .container {
+      padding-left: 7%;
+      padding-right: 7%;
+    }
+  }
+  
+  @media screen and (max-width: 991px) {
+    .menu-title-info {
+      display: none;
+    }
+
+    
+   
+  }
