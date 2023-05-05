@@ -952,10 +952,9 @@ footer {
   }
 
   .menu-header-section h3{
-    font-family: 'Elsie';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 64px; 
+    font-family: 'Vollkorn';
+    font-weight: 700;
+    font-size: clamp(40px,6vw,85px);
     color: #FFFFFF;
   }
 
@@ -997,6 +996,9 @@ footer {
     cursor: pointer;
     white-space: nowrap;
     font-size: 19px;
+    font-family: Vollkorn;
+color: #262022;
+font-weight: 900;
   }
 
   .restaurant-menu {
@@ -1016,6 +1018,8 @@ footer {
     align-items: center;
     padding-bottom: 2rem;
     font-size: 36px;
+    font-family: 'Vollkorn';
+    font-weight: 700;
   }
 
   .menu-header {
@@ -1028,9 +1032,18 @@ footer {
   }
 
   .menu-title {
-    font-weight: 600;
+    white-space: wrap;
+    color: #262022;
+    font-family: 'oswald';
+    font-weight: 700;
     font-size: 20px;
-    white-space: nowrap;
+  }
+
+  .menu-desc {
+    font-family: 'oswald';
+    color: #262022;
+    font-weight: 400;
+    font-size: 18px;
   }
 
   .menu-desc {
@@ -1041,6 +1054,8 @@ footer {
 
   .menu-price {
     white-space: nowrap;
+    font-weight: 600;
+    font-family: 'Oswald';
     font-size: 18px;
   }
 
@@ -1057,6 +1072,15 @@ footer {
       display: none;
     }
 
+    .restaurant-menu {
+      display: none;
+    }
     
+    .menu-container {
+      justify-content: center;
+      margin: 0 auto;
+    }
    
   }
+
+  

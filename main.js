@@ -49,6 +49,7 @@ document.addEventListener('click', function(event) {
  // Uruchom funkcję po załadowaniu strony
  window.addEventListener('load', changeImage);
 
+ //Wymiana tekstu w sekcji menu
  const menuSection = document.querySelectorAll('.restaurant-menu')
  const menuTabs = document.querySelectorAll('.menu-tab')
 
