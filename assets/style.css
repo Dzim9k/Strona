@@ -963,14 +963,14 @@ footer {
     display: flex;
     padding-left: 10%;
     padding-right: 10%;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
   }
 
   .menu-container {
     display: flex;
     flex-direction: column;
   }
-
+ 
   .karta {
     display: flex;
     align-items: center;
@@ -978,7 +978,7 @@ footer {
   }
 
   .karta:not(:first-child) {
-    margin-top: 5px;
+    margin-top: 9px;
   }
 
   .img-rozetka {
@@ -995,10 +995,10 @@ footer {
     border: none;
     cursor: pointer;
     white-space: nowrap;
-    font-size: 19px;
+    font-size: 20px;
     font-family: Vollkorn;
-color: #262022;
-font-weight: 900;
+    color: #262022;
+    font-weight: 800;
   }
 
   .restaurant-menu {
@@ -1059,28 +1059,148 @@ font-weight: 900;
     font-size: 18px;
   }
 
+  /* gallery */
+  .gallery-header-container {
+    background-image: url(../img/DJI_0064.jpg);
+    width: 100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+  }
 
-  @media screen and (max-width: 1200px) {
-    .container {
-      padding-left: 7%;
-      padding-right: 7%;
-    }
+  .gallery-header-section h3{
+    font-family: 'Vollkorn';
+    font-weight: 700;
+    font-size: clamp(40px,6vw,85px);
+    color: #FFFFFF;
+  }
+
+  .button-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+  }
+
+  .tablink{
+    font-family: 'Oswald';
+    background-color: #dcb652;
+    color: #ffffff;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 7px;
+    transition-duration: 0.4s;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
   }
   
-  @media screen and (max-width: 991px) {
-    .menu-title-info {
-      display: none;
-    }
-
-    .restaurant-menu {
-      display: none;
-    }
-    
-    .menu-container {
-      justify-content: center;
-      margin: 0 auto;
-    }
-   
+  .tablink.active {
+    background-color: green;
+  }
+  
+  .tabcontent {
+    display: none;
+  }
+  
+  .tabcontent img {
+    max-width: 80%;
+    margin: 10px;
   }
 
+  .gallery-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* kontakt */
+
+  .container-contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .left-section-contact {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .left-section-contact h2 {
+    font-family: 'Vollkorn';
+    font-weight: 900;
+    font-size: 28px;
+    color: #262022;
+  }
+
+  .left-section-contact p {
+    font-family: 'Vollkorn';
+    font-weight: 600;
+    font-size: 23px;
+    color: #262022;
+    margin-top: 20px;
+  }
+  
+  .phone {
+    font-family: 'Vollkorn';
+    font-weight: 900;
+    font-size: 28px;
+    margin-top: 20px;
+    color: #262022;
+  }
+
+  .email {
+    font-family: 'Vollkorn';
+    font-weight: 600;
+    font-size: 23px;
+    color: #262022;
+    margin-top: 20px;
+  }
+
+  .fb {
+    font-family: 'Vollkorn';
+    font-weight: 600;
+    font-size: 23px;
+    color: #262022;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+ 
+  
+  
+
+  @media screen and (max-width: 991px) {
+    .container-contact {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .left-section-contact {
+      text-align: center;
+      padding-bottom: 20px;
+    }
+  }
+
+   
   
