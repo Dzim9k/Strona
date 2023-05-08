@@ -1043,13 +1043,9 @@ footer {
     font-family: 'oswald';
     color: #262022;
     font-weight: 400;
-    font-size: 18px;
-  }
-
-  .menu-desc {
+    font-size: 19px;
     margin-top: 5px;
     width: 65%;
-    font-size: 18px;
   }
 
   .menu-price {
@@ -1260,7 +1256,4 @@ footer {
       height: 400px;
       }
 
-    }
-  
-   
-    
+    }   
