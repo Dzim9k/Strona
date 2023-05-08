@@ -1111,7 +1111,7 @@ footer {
   }
   
   .tablink.active {
-    background-color: green;
+    background-color: #895f05;
   }
   
   .tabcontent {
@@ -1119,26 +1119,68 @@ footer {
   }
   
   .tabcontent img {
-    max-width: 80%;
+    max-width: 100%;
     margin: 10px;
   }
 
   .gallery-flex {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   column-gap: 2%;
+  }
+
+  .gallery-section {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  @media screen and (max-width: 1199px) {
+
+    .gallery-flex {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .gallery-section {
+        padding-bottom: 2rem;
+  }
+
+  }
+
+  @media screen and (max-width: 700px) {
+
+    .gallery-flex {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      .gallery-section {
+        padding-bottom: 1rem;
+  }
+
+  .button-section {
+    flex-direction: column;
+    padding-top: 2.3rem;
+    padding-bottom: 1rem;
+  }
+
+  .tablink {
+    margin-top: 10px;
+    width: 160px;
+  }
+
   }
 
   /* kontakt */
 
   .container-contact {
+    box-sizing: border-box;
     display: flex;
-    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
     justify-content: space-between;
     padding-left: 10%;
     padding-right: 10%;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
   }
 
   .left-section-contact {
@@ -1185,22 +1227,40 @@ footer {
     margin-top: 20px;
     margin-bottom: 20px;
   }
-
- 
   
+  .map-responsive{
+      display: flex;
+      width: 45%;
+      height: auto;
+      min-width: 50%;
+    }
+    .map-responsive iframe{
+      max-width: 100%;
+      min-width: 100%;
+      height: auto;
+      border: none;
+    }
   
+    @media screen and (max-width: 1199px) {
 
-  @media screen and (max-width: 991px) {
-    .container-contact {
-      flex-wrap: wrap;
-      justify-content: center;
+      .container-contact {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+      }
+
+      .map-responsive {
+        min-width: 100%;
+        padding-top: 3rem;
+      }
+
+      .map-responsive iframe {
+        max-width: 100%;
+      width: 600px;
+      height: 400px;
+      }
+
     }
-
-    .left-section-contact {
-      text-align: center;
-      padding-bottom: 20px;
-    }
-  }
-
+  
    
-  
+    
