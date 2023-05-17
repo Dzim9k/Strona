@@ -1,232 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karczma Borowa Chata</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Elsie:wght@900&family=Manrope&family=Vollkorn:wght@400;500;600;700;900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./assets/style.css">
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Elsie:wght@900&family=Manrope&family=Vollkorn:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css">
+
 </head>
+
 <body>
 
     <header>
-                
-                <a href="index.html"><img src="./img/BorowaChata-Logo.png" class="logo" alt="Logo Karczma Borowa Chata"></a>
-                <div class="hamburger">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
 
-                
-                
-                <nav class="nav-bar">
-                    <ul>
-                        <li><a href="index.html">Strona Główna</a></li>
-                        <li class="nav-dropdown"><a href="#" class="active">Menu</a>
-                            <div class="dropdown">
-                                <ul>
-                                    <li><a href="menug.html">Menu Główne</a></li>
-                                    <li><a href="#">Menu Pizza & Fast Food</a></li>
-                                    <li><a href="#">Menu okolicznościowe</a></li>
-                                    <li><a href="#">Menu weselne</a></li>
-                                    <li><a href="#">Menu komunijne</a></li>
-                                    <li><a href="#">Menu biesiadne</a></li>
-                                    <li><a href="#">Menu wigilijne</a></li>
-                                    <li><a href="#">Menu na stypę</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li><a href="galeria.html">Galeria</a></li>
-                        <li><a href="kontakt.html">Kontakt</a></li>
-                    </ul>
-            </nav>
-      
+        <a href="index.html"><img src="./img/BorowaChata-Logo.png" class="logo" alt="Logo Karczma Borowa Chata"></a>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+
+
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html">Strona Główna</a></li>
+                <li class="nav-dropdown"><a href="#" class="active">Menu</a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="menug.html">Menu Główne</a></li>
+                            <li><a href="#">Menu Pizza & Fast Food</a></li>
+                            <li><a href="#">Menu okolicznościowe</a></li>
+                            <li><a href="#">Menu weselne</a></li>
+                            <li><a href="#">Menu komunijne</a></li>
+                            <li><a href="#">Menu biesiadne</a></li>
+                            <li><a href="#">Menu wigilijne</a></li>
+                            <li><a href="#">Menu na stypę</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+
     </header>
     <section>
-        
+
         <div class="menu-header-container">
             <div class="menu-header-section">
                 <h3>MENU GŁÓWNE</h3>
             </div>
         </div>
-    
-</section>
+    </section>
 
-<div class="container">
-    <div class="left-menu.sticky">
-    <div class="menu-container">
+    <div class="container">
+        <div class="menu-container">
 
             <div class="karta">
                 <img src="./img/czarny.png" alt="rozetka" class="img-rozetka">
-                <div class="tekst"> <button data-id="first-tab" onclick="showInfo('first-tab')" class="menu-tab menu-tab-active">Korytko</button> </div>
-            </div>   
+                <div class="tekst"> <button data-id="first-tab" onclick="showInfo('first-tab')"
+                        class="menu-tab menu-tab-active">Korytko</button> </div>
+            </div>
+
+            <!-- -->
+            <div class="restaurant-menu" id="first-tab" style="display: none;">
+
+
+                <div class="menu-item">
+                    <div class="menu-header">
+                        <div class="menu-title">KORYTKO DLA 2 OSÓB</div>
+                        <div class="menu-desc">Karczek 2 sztuki, schab 2 sztuki, filet z
+                            grilla 2 sztuki, boczek 2 sztuki, kiełbasa 2 sztuki, kaszanka 2 sztuki,
+                            ziemniaki z kociołka, kapusta zasmażana, 6 pierogów lub pieczarki panierowane
+                            zamiennie, surówki, sos czosnkowy.</div>
+                    </div>
+                    <div class="menu-price">
+                        120 zł
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-header">
+                        <div class="menu-title">KORYTKO DLA 4 OSÓB</div>
+                        <div class="menu-desc">Karczek 4 sztuki, schab 4 sztuki, filet z
+                            grilla 4 sztuki, boczek 4 sztuki, kiełbasa 4 sztuki, kaszanka 4 sztuki,
+                            ziemniaki z kociołka, kapusta zasmażana, 12 pierogów lub pieczarki panierowane
+                            zamiennie, surówki, sos czosnkowy.</div>
+                    </div>
+                    <div class="menu-price">
+                        220 zł
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- -->
+
 
             <div class="karta">
                 <img src="./img/czerwone.png" alt="rozetka" class="img-rozetka">
-                <div class="tekst"> <button data-id="first-tab" onclick="showInfo('second-tab')" class="menu-tab menu-tab-active">Śniadania</button> </div>
+                <div class="tekst"> <button data-id="first-tab" onclick="showInfo('second-tab')"
+                        class="menu-tab menu-tab-active">Śniadania</button> </div>
             </div>
+
+            <!-- -->
+            <div class="restaurant-menu" id="second-tab" style="display: none;">
+
+
+                <div class="menu-item">
+                    <div class="menu-header">
+                        <div class="menu-title">JAJECZNICA NA MAŚLE</div>
+                    </div>
+                    <div class="menu-price">
+                        14 zł
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-header">
+                        <div class="menu-title">JAJECZNICA NA SZYNCE</div>
+                    </div>
+                    <div class="menu-price">
+                        16 zł
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-header">
+                        <div class="menu-title">OMLET Z SZYNKA I SEREM</div>
+                    </div>
+                    <div class="menu-price">
+                        22 zł
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-header">
+                        <div class="menu-title">KASZANKA Z CEBULĄ</div>
+                    </div>
+                    <div class="menu-price">
+                        16 zł
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-header">
+                        <div class="menu-title">KIEŁBASKA SMAŻONA Z CEBULKĄ</div>
+                    </div>
+                    <div class="menu-price">
+                        20 zł
+                    </div>
+
+                </div>
+            </div>
+            <!-- -->
+
 
             <div class="karta">
                 <img src="./img/zielony.png" alt="rozetka" class="img-rozetka">
-                <div class="tekst"> <button data-id="first-tab" onclick="showInfo('third-tab')" class="menu-tab menu-tab-active">Przystawki</button> </div>
-            </div>
-            
-            <div class="karta">
-                <img src="./img/niebieski.png" alt="rozetka" class="img-rozetka">
-                <div class="tekst"> <button data-id="first-tab" onclick="showInfo('four-tab')" class="menu-tab menu-tab-active">Zupy</button> </div>
+                <div class="tekst"> <button data-id="first-tab" onclick="showInfo('third-tab')"
+                        class="menu-tab menu-tab-active">Przystawki</button> </div>
             </div>
 
-            <div class="karta">
-                <img src="./img/czarny.png" alt="rozetka" class="img-rozetka">
-                <div class="tekst"> <button data-id="first-tab" onclick="showInfo('five-tab')" class="menu-tab menu-tab-active">Dania obiadowe</button> </div>
-            </div>
-
-            <div class="karta">
-                <img src="./img/czerwone.png" alt="rozetka" class="img-rozetka">
-                <div class="tekst"> <button data-id="first-tab" onclick="showInfo('six-tab')" class="menu-tab menu-tab-active">Dania z grilla</button> </div>
-            </div>
-
-            <div class="karta">
-                <img src="./img/zielony.png" alt="rozetka" class="img-rozetka">
-                <div class="tekst"> <button data-id="first-tab" onclick="showInfo('seven-tab')" class="menu-tab menu-tab-active">Dania rybne</button> </div>
-            </div>
-            <div class="karta">
-                <img src="./img/niebieski.png" alt="rozetka" class="img-rozetka">
-                <div class="tekst"> <button data-id="first-tab" onclick="showInfo('eight-tab')" class="menu-tab menu-tab-active">Dodatki ku misce</button> </div>
-            </div>   
-            <div class="karta">
-                <img src="./img/czarny.png" alt="rozetka" class="img-rozetka">
-                <div class="tekst"> <button data-id="first-tab" onclick="showInfo('nine-tab')" class="menu-tab menu-tab-active">Surówki i sałatki</button> </div>
-            </div>   
-            <div class="karta">
-                <img src="./img/czerwone.png" alt="rozetka" class="img-rozetka">
-                <div class="tekst"> <button data-id="first-tab" onclick="showInfo('ten-tab')" class="menu-tab menu-tab-active">Pierogi</button> </div>
-            </div>   
-            <div class="karta">
-                <img src="./img/zielony.png" alt="rozetka" class="img-rozetka">
-                <div class="tekst"> <button data-id="first-tab" onclick="showInfo('eleven-tab')" class="menu-tab menu-tab-active">Desery</button> </div>
-            </div>   
-            <div class="karta">
-                <img src="./img/niebieski.png" alt="rozetka" class="img-rozetka">
-                <div class="tekst"> <button data-id="first-tab" onclick="showInfo('twelve-tab')" class="menu-tab menu-tab-active">napoje</button> </div>
-            </div>   
-            <div class="karta">
-                <img src="./img/czarny.png" alt="rozetka" class="img-rozetka">
-                <div class="tekst"> <button data-id="first-tab" onclick="showInfo('thirteen-tab')" class="menu-tab menu-tab-active">Drinki alkoholowe</button> </div>
-            </div>   
-            <div class="karta">
-                <img src="./img/czerwone.png" alt="rozetka" class="img-rozetka">
-                <div class="tekst"> <button data-id="first-tab" onclick="showInfo('fourteen-tab')" class="menu-tab menu-tab-active">Grzańce</button> </div>
-            </div>   
-            <div class="karta">
-                <img src="./img/zielony.png" alt="rozetka" class="img-rozetka">
-                <div class="tekst"> <button data-id="first-tab" onclick="showInfo('fiveteen-tab')" class="menu-tab menu-tab-active">Piwo</button> </div>
-            </div>   
-            <div class="karta">
-                <img src="./img/niebieski.png" alt="rozetka" class="img-rozetka">
-                <div class="tekst"> <button data-id="first-tab" onclick="showInfo('sixteen-tab')" class="menu-tab menu-tab-active">Wino</button> </div>
-            </div>   
-            <div class="karta">
-                <img src="./img/czarny.png" alt="rozetka" class="img-rozetka">
-                <div class="tekst"> <button data-id="first-tab" onclick="showInfo('seventeen-tab')" class="menu-tab menu-tab-active">Wódka</button> </div>
-            </div>
-        </div>
-    </div>
-    
-  
-    <div class="restaurant-menu" id="first-tab">
-
-      <!-- -->
-      <div class="menu-title-info">Korytko</div>
-        <div class="menu-item">
-                <div class="menu-header">
-                    <div class="menu-title">KORYTKO DLA 2 OSÓB</div>
-                    <div class="menu-desc">Karczek 2 sztuki, schab 2 sztuki, filet z 
-                        grilla 2 sztuki, boczek 2 sztuki, kiełbasa 2 sztuki, kaszanka 2 sztuki,
-                        ziemniaki z kociołka, kapusta zasmażana, 6 pierogów lub pieczarki panierowane
-                        zamiennie, surówki, sos czosnkowy.</div>
-                </div>
-                <div class="menu-price">
-                    120 zł
-                </div>
-        </div>
-            <div class="menu-item">
-                <div class="menu-header">
-                    <div class="menu-title">KORYTKO DLA 4 OSÓB</div>
-                    <div class="menu-desc">Karczek 4 sztuki, schab 4 sztuki, filet z
-                        grilla 4 sztuki, boczek 4 sztuki, kiełbasa 4 sztuki, kaszanka 4 sztuki,
-                        ziemniaki z kociołka, kapusta zasmażana, 12 pierogów lub pieczarki panierowane
-                        zamiennie, surówki, sos czosnkowy.</div>
-                </div>
-                <div class="menu-price">
-                    220 zł
-                </div>
-            </div>
-       
-            
-    </div>
-<!-- -->
-    
-        <!-- -->
-        <div class="restaurant-menu" id="second-tab" style="display: none;">
-
-        <div class="menu-title-info">Śniadania</div>
-          <div class="menu-item">
-                  <div class="menu-header">
-                      <div class="menu-title">JAJECZNICA NA MAŚLE</div>
-                  </div>
-                  <div class="menu-price">
-                      14 zł
-                  </div>
-          </div>
-              <div class="menu-item">
-                  <div class="menu-header">
-                      <div class="menu-title">JAJECZNICA NA SZYNCE</div>
-                  </div>
-                  <div class="menu-price">
-                      16 zł
-                  </div>
-              </div>
-              <div class="menu-item">
-                <div class="menu-header">
-                    <div class="menu-title">OMLET Z SZYNKA I SEREM</div>
-                </div>
-                <div class="menu-price">
-                    22 zł
-                </div>
-        </div>
-        <div class="menu-item">
-            <div class="menu-header">
-                <div class="menu-title">KASZANKA Z CEBULĄ</div>
-            </div>
-            <div class="menu-price">
-                16 zł
-            </div>
-    </div>
-    <div class="menu-item">
-        <div class="menu-header">
-            <div class="menu-title">KIEŁBASKA SMAŻONA Z CEBULKĄ</div>
-        </div>
-        <div class="menu-price">
-            20 zł
-        </div>
-</div>
-              
-      </div>
-<!-- -->
-
-        <!-- -->
+            <!-- -->
     <div class="restaurant-menu" id="third-tab" style="display: none;">
 
-        <div class="menu-title-info">Przystawki</div>
+       
         <div class="menu-item">
                 <div class="menu-header">
                     <div class="menu-title">ŚLEDŹ W OLEJU W CEBULCE</div>
@@ -270,10 +215,17 @@
             
     </div>
     <!-- -->
-     <!-- -->
+
+            <div class="karta">
+                <img src="./img/niebieski.png" alt="rozetka" class="img-rozetka">
+                <div class="tekst"> <button data-id="first-tab" onclick="showInfo('four-tab')"
+                        class="menu-tab menu-tab-active">Zupy</button> </div>
+            </div>
+
+            <!-- -->
      <div class="restaurant-menu" id="four-tab" style="display: none;">
 
-        <div class="menu-title-info">Zupy</div>
+       
         <div class="menu-item">
                 <div class="menu-header">
                     <div class="menu-title">ROSÓŁ Z MAKARONEM /OKOŁO 500 ML/</div>
@@ -414,10 +366,16 @@
     </div>
     <!-- -->
 
-     <!-- -->
+            <div class="karta">
+                <img src="./img/czarny.png" alt="rozetka" class="img-rozetka">
+                <div class="tekst"> <button data-id="first-tab" onclick="showInfo('five-tab')"
+                        class="menu-tab menu-tab-active">Dania obiadowe</button> </div>
+            </div>
+
+            <!-- -->
      <div class="restaurant-menu" id="five-tab" style="display: none;">
 
-        <div class="menu-title-info">Dania obiadowe</div>
+        
         <div class="menu-item">
                 <div class="menu-header">
                     <div class="menu-title">KOTLET SCHABOWY PANIEROWANY /OKOŁO 300 G/</div>
@@ -572,10 +530,16 @@
     </div>
     <!-- -->
 
-     <!-- -->
+            <div class="karta">
+                <img src="./img/czerwone.png" alt="rozetka" class="img-rozetka">
+                <div class="tekst"> <button data-id="first-tab" onclick="showInfo('six-tab')"
+                        class="menu-tab menu-tab-active">Dania z grilla</button> </div>
+            </div>
+
+            <!-- -->
      <div class="restaurant-menu" id="six-tab" style="display: none;">
 
-        <div class="menu-title-info">Dania z grilla</div>
+      
         <div class="menu-item">
                 <div class="menu-header">
                     <div class="menu-title">KARCZEK /100 G/</div>
@@ -621,10 +585,16 @@
     </div>
     <!-- -->
 
-    <!-- -->
+            <div class="karta">
+                <img src="./img/zielony.png" alt="rozetka" class="img-rozetka">
+                <div class="tekst"> <button data-id="first-tab" onclick="showInfo('seven-tab')"
+                        class="menu-tab menu-tab-active">Dania rybne</button> </div>
+            </div>
+
+            <!-- -->
     <div class="restaurant-menu" id="seven-tab" style="display: none;">
 
-        <div class="menu-title-info">Dania rybne</div>
+       
         <div class="menu-item">
                 <div class="menu-header">
                     <div class="menu-title">FILET Z DORSZA /100 G/</div>
@@ -660,37 +630,36 @@
             
     </div>
     <!-- -->
-    <!-- -->
-    <div class="restaurant-menu" id="eight-tab" style="display: none;">
 
-        <div class="menu-title-info">Dodatki ku misce</div>
-        <div class="menu-item">
-                <div class="menu-header">
-                    <div class="menu-title">ZIEMNIAKI GOTOWANE</div>
-                </div>
-                <div class="menu-price">
-                    7 zł
-                </div>
-        </div>
-            <div class="menu-item">
-                <div class="menu-header">
-                    <div class="menu-title">ZIEMNIAKI OPIEKANE - KSIĘŻYCE /OKOŁO 400 G/</div>
-                </div>
-                <div class="menu-price">
-                    11 zł
-                </div>
+            <div class="karta">
+                <img src="./img/niebieski.png" alt="rozetka" class="img-rozetka">
+                <div class="tekst"> <button data-id="first-tab" onclick="showInfo('eight-tab')"
+                        class="menu-tab menu-tab-active">Dodatki ku misce</button> </div>
             </div>
-            <div class="menu-item">
-                <div class="menu-header">
-                    <div class="menu-title">ZIEMNIAKI Z KOCIOŁKA Z BOCZKIEM /OKOŁO 400 G/</div>
-                </div>
-                <div class="menu-price">
-                    11 zł
-                </div>
+
+<!-- -->
+<div class="restaurant-menu" id="eight-tab" style="display: none;">
+
+    
+    <div class="menu-item">
+            <div class="menu-header">
+                <div class="menu-title">ZIEMNIAKI GOTOWANE</div>
+            </div>
+            <div class="menu-price">
+                7 zł
+            </div>
+    </div>
+        <div class="menu-item">
+            <div class="menu-header">
+                <div class="menu-title">ZIEMNIAKI OPIEKANE - KSIĘŻYCE /OKOŁO 400 G/</div>
+            </div>
+            <div class="menu-price">
+                11 zł
+            </div>
         </div>
         <div class="menu-item">
             <div class="menu-header">
-                <div class="menu-title">FRYTKI /OKOŁO 400 G/</div>
+                <div class="menu-title">ZIEMNIAKI Z KOCIOŁKA Z BOCZKIEM /OKOŁO 400 G/</div>
             </div>
             <div class="menu-price">
                 11 zł
@@ -698,98 +667,105 @@
     </div>
     <div class="menu-item">
         <div class="menu-header">
-            <div class="menu-title">FRYTKI Z SEREM /OKOŁO 400 G/</div>
-        </div>
-        <div class="menu-price">
-            13 zł
-        </div>
-    </div>
-    <div class="menu-item">
-        <div class="menu-header">
-            <div class="menu-title">KLUSKI ŚLĄSKIE</div>
-            <div class="menu-desc">Polecane z sosem pieczeniowym.</div>
+            <div class="menu-title">FRYTKI /OKOŁO 400 G/</div>
         </div>
         <div class="menu-price">
             11 zł
         </div>
+</div>
+<div class="menu-item">
+    <div class="menu-header">
+        <div class="menu-title">FRYTKI Z SEREM /OKOŁO 400 G/</div>
     </div>
-    <div class="menu-item">
-        <div class="menu-header">
-            <div class="menu-title">RYŻ</div>
-        </div>
-        <div class="menu-price">
-            9 zł
-        </div>
+    <div class="menu-price">
+        13 zł
     </div>
-    <div class="menu-item">
-        <div class="menu-header">
-            <div class="menu-title">INNE DODATKI</div>
-            <div class="menu-desc">Sos czosnkowy, musztarda, ketchup, pieczywo, masło, chrzan.</div>
-        </div>
-        <div class="menu-price">
-            4 zł
-        </div>
+</div>
+<div class="menu-item">
+    <div class="menu-header">
+        <div class="menu-title">KLUSKI ŚLĄSKIE</div>
+        <div class="menu-desc">Polecane z sosem pieczeniowym.</div>
     </div>
-    <div class="menu-item">
-        <div class="menu-header">
-            <div class="menu-title">SOS PIECZARKOWY</div>
-        </div>
-        <div class="menu-price">
-            10 zł
-        </div>
+    <div class="menu-price">
+        11 zł
     </div>
-    <div class="menu-item">
-        <div class="menu-header">
-            <div class="menu-title">SOS PIECZENIOWY</div>
-        </div>
-        <div class="menu-price">
-            7 zł
-        </div>
+</div>
+<div class="menu-item">
+    <div class="menu-header">
+        <div class="menu-title">RYŻ</div>
     </div>
-    <div class="menu-item">
-        <div class="menu-header">
-            <div class="menu-title">SOS BOROWIKOWY</div>
-        </div>
-        <div class="menu-price">
-            16 zł
-        </div>
+    <div class="menu-price">
+        9 zł
     </div>
+</div>
+<div class="menu-item">
+    <div class="menu-header">
+        <div class="menu-title">INNE DODATKI</div>
+        <div class="menu-desc">Sos czosnkowy, musztarda, ketchup, pieczywo, masło, chrzan.</div>
+    </div>
+    <div class="menu-price">
+        4 zł
+    </div>
+</div>
+<div class="menu-item">
+    <div class="menu-header">
+        <div class="menu-title">SOS PIECZARKOWY</div>
+    </div>
+    <div class="menu-price">
+        10 zł
+    </div>
+</div>
+<div class="menu-item">
+    <div class="menu-header">
+        <div class="menu-title">SOS PIECZENIOWY</div>
+    </div>
+    <div class="menu-price">
+        7 zł
+    </div>
+</div>
+<div class="menu-item">
+    <div class="menu-header">
+        <div class="menu-title">SOS BOROWIKOWY</div>
+    </div>
+    <div class="menu-price">
+        16 zł
+    </div>
+</div>
 
 
-            
-    </div>
-    <!-- -->
-     <!-- -->
-     <div class="restaurant-menu" id="nine-tab" style="display: none;">
+        
+</div>
+<!-- -->
 
-        <div class="menu-title-info">Surówki i sałatki</div>
-        <div class="menu-item">
-                <div class="menu-header">
-                    <div class="menu-title">SURÓWKA Z KAPUSTY BIAŁEJ</div>
-                </div>
-                <div class="menu-price">
-                    8 zł
-                </div>
-        </div>
-            <div class="menu-item">
-                <div class="menu-header">
-                    <div class="menu-title">SURÓWKA Z KAPUSTY CZERWONEJ</div>
-                </div>
-                <div class="menu-price">
-                    8 zł
-                </div>
+            <div class="karta">
+                <img src="./img/czarny.png" alt="rozetka" class="img-rozetka">
+                <div class="tekst"> <button data-id="first-tab" onclick="showInfo('nine-tab')"
+                        class="menu-tab menu-tab-active">Surówki i sałatki</button> </div>
             </div>
-            <div class="menu-item">
-                <div class="menu-header">
-                    <div class="menu-title">SURÓWKA Z KAPUSTY KISZONEJ</div>
-                </div>
-                <div class="menu-price">
-                    8 zł
-                </div>
+
+<!-- -->
+<div class="restaurant-menu" id="nine-tab" style="display: none;">
+
+  
+    <div class="menu-item">
+            <div class="menu-header">
+                <div class="menu-title">SURÓWKA Z KAPUSTY BIAŁEJ</div>
+            </div>
+            <div class="menu-price">
+                8 zł
+            </div>
+    </div>
+        <div class="menu-item">
+            <div class="menu-header">
+                <div class="menu-title">SURÓWKA Z KAPUSTY CZERWONEJ</div>
+            </div>
+            <div class="menu-price">
+                8 zł
+            </div>
         </div>
         <div class="menu-item">
             <div class="menu-header">
-                <div class="menu-title">SURÓWKA Z BURACZKÓW</div>
+                <div class="menu-title">SURÓWKA Z KAPUSTY KISZONEJ</div>
             </div>
             <div class="menu-price">
                 8 zł
@@ -797,133 +773,155 @@
     </div>
     <div class="menu-item">
         <div class="menu-header">
-            <div class="menu-title">SURÓWKA Z MARCHEWKI</div>
+            <div class="menu-title">SURÓWKA Z BURACZKÓW</div>
         </div>
         <div class="menu-price">
             8 zł
         </div>
-    </div>
-    <div class="menu-item">
-        <div class="menu-header">
-            <div class="menu-title">ZESTAW SURÓWEK</div>
-        </div>
-        <div class="menu-price">
-            10 zł
-        </div>
-    </div>
-    <div class="menu-item">
-        <div class="menu-header">
-            <div class="menu-title">OGÓREK KISZONY</div>
-        </div>
-        <div class="menu-price">
-            9 zł
-        </div>
-    </div>
-    <div class="menu-item">
-        <div class="menu-header">
-            <div class="menu-title">MIZERIA</div>
-        </div>
-        <div class="menu-price">
-            10 zł
-        </div>
-    </div>
-    <div class="menu-item">
-        <div class="menu-header">
-            <div class="menu-title">KAPUSTA ZASMAŻANA</div>
-        </div>
-        <div class="menu-price">
-            10 zł
-        </div>
-    </div>
-    <div class="menu-item">
-        <div class="menu-header">
-            <div class="menu-title">PIECZARKI DUSZONE</div>
-        </div>
-        <div class="menu-price">
-            10 zł
-        </div>
-    </div>
-    <div class="menu-item">
-        <div class="menu-header">
-            <div class="menu-title">SAŁATKA GRECKA</div>
-            <div class="menu-desc">Pomidor, ogórek zielony, oliwki, ser feta, sałata, sos czosnkowy.</div>
-        </div>
-        <div class="menu-price">
-            16 zł
-        </div>
-    </div>
-    <div class="menu-item">
-        <div class="menu-header">
-            <div class="menu-title">SAŁATKA CEZAR</div>
-            <div class="menu-desc">Kurczak, ogórek, pomidorki koktajlowe, kukurydza, kapusta pekińska, cebula, sos winegret.</div>
-        </div>
-        <div class="menu-price">
-            24 zł
-        </div>
-    </div>
-    <div class="menu-item">
-        <div class="menu-header">
-            <div class="menu-title">MŁODA KAPUSTA</div>
-            <div class="menu-desc">W sezonie.</div>
-        </div>
-        <div class="menu-price">
-            11 zł
-        </div>
-    </div>
-            
-    </div>
-    <!-- -->
-     <!-- -->
-     <div class="restaurant-menu" id="ten-tab" style="display: none;">
-
-     <div class="menu-title-info">Pierogi</div>
-     <div class="menu-item">
-             <div class="menu-header">
-                 <div class="menu-title">PIEROGI Z KAPUSTĄ I MIĘSEM /14 SZT./</div>
-             </div>
-             <div class="menu-price">
-                 24 zł
-             </div>
-     </div>
-         <div class="menu-item">
-             <div class="menu-header">
-                 <div class="menu-title">PIEROGI Z KAPUSTĄ I GRZYBAMI /14 SZT./</div>
-             </div>
-             <div class="menu-price">
-                 24 zł
-             </div>
-         </div>
-         <div class="menu-item">
-           <div class="menu-header">
-               <div class="menu-title">PIEROGI RUSKIE /14 SZT./</div>
-           </div>
-           <div class="menu-price">
-               24 zł
-           </div>
-   </div>
-   <div class="menu-item">
-       <div class="menu-header">
-           <div class="menu-title">MIX PIEROGÓW /21 SZT./</div>
-       </div>
-       <div class="menu-price">
-           36 zł
-       </div>
 </div>
 <div class="menu-item">
-   <div class="menu-header">
-       <div class="menu-title">KIEŁBASKA SMAŻONA Z CEBULKĄ</div>
-   </div>
-   <div class="menu-price">
-       20 zł
-   </div>
+    <div class="menu-header">
+        <div class="menu-title">SURÓWKA Z MARCHEWKI</div>
+    </div>
+    <div class="menu-price">
+        8 zł
+    </div>
 </div>
-         
- </div>
+<div class="menu-item">
+    <div class="menu-header">
+        <div class="menu-title">ZESTAW SURÓWEK</div>
+    </div>
+    <div class="menu-price">
+        10 zł
+    </div>
+</div>
+<div class="menu-item">
+    <div class="menu-header">
+        <div class="menu-title">OGÓREK KISZONY</div>
+    </div>
+    <div class="menu-price">
+        9 zł
+    </div>
+</div>
+<div class="menu-item">
+    <div class="menu-header">
+        <div class="menu-title">MIZERIA</div>
+    </div>
+    <div class="menu-price">
+        10 zł
+    </div>
+</div>
+<div class="menu-item">
+    <div class="menu-header">
+        <div class="menu-title">KAPUSTA ZASMAŻANA</div>
+    </div>
+    <div class="menu-price">
+        10 zł
+    </div>
+</div>
+<div class="menu-item">
+    <div class="menu-header">
+        <div class="menu-title">PIECZARKI DUSZONE</div>
+    </div>
+    <div class="menu-price">
+        10 zł
+    </div>
+</div>
+<div class="menu-item">
+    <div class="menu-header">
+        <div class="menu-title">SAŁATKA GRECKA</div>
+        <div class="menu-desc">Pomidor, ogórek zielony, oliwki, ser feta, sałata, sos czosnkowy.</div>
+    </div>
+    <div class="menu-price">
+        16 zł
+    </div>
+</div>
+<div class="menu-item">
+    <div class="menu-header">
+        <div class="menu-title">SAŁATKA CEZAR</div>
+        <div class="menu-desc">Kurczak, ogórek, pomidorki koktajlowe, kukurydza, kapusta pekińska, cebula, sos winegret.</div>
+    </div>
+    <div class="menu-price">
+        24 zł
+    </div>
+</div>
+<div class="menu-item">
+    <div class="menu-header">
+        <div class="menu-title">MŁODA KAPUSTA</div>
+        <div class="menu-desc">W sezonie.</div>
+    </div>
+    <div class="menu-price">
+        11 zł
+    </div>
+</div>
+        
+</div>
 <!-- -->
+
+            <div class="karta">
+                <img src="./img/czerwone.png" alt="rozetka" class="img-rozetka">
+                <div class="tekst"> <button data-id="first-tab" onclick="showInfo('ten-tab')"
+                        class="menu-tab menu-tab-active">Pierogi</button> </div>
+            </div>
+
+<!-- -->
+<div class="restaurant-menu" id="ten-tab" style="display: none;">
+
+   
+    <div class="menu-item">
+            <div class="menu-header">
+                <div class="menu-title">PIEROGI Z KAPUSTĄ I MIĘSEM /14 SZT./</div>
+            </div>
+            <div class="menu-price">
+                24 zł
+            </div>
+    </div>
+        <div class="menu-item">
+            <div class="menu-header">
+                <div class="menu-title">PIEROGI Z KAPUSTĄ I GRZYBAMI /14 SZT./</div>
+            </div>
+            <div class="menu-price">
+                24 zł
+            </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-header">
+              <div class="menu-title">PIEROGI RUSKIE /14 SZT./</div>
+          </div>
+          <div class="menu-price">
+              24 zł
+          </div>
+  </div>
+  <div class="menu-item">
+      <div class="menu-header">
+          <div class="menu-title">MIX PIEROGÓW /21 SZT./</div>
+      </div>
+      <div class="menu-price">
+          36 zł
+      </div>
+</div>
+<div class="menu-item">
+  <div class="menu-header">
+      <div class="menu-title">KIEŁBASKA SMAŻONA Z CEBULKĄ</div>
+  </div>
+  <div class="menu-price">
+      20 zł
+  </div>
+</div>
+        
+</div>
+<!-- -->
+
+            <div class="karta">
+                <img src="./img/zielony.png" alt="rozetka" class="img-rozetka">
+                <div class="tekst"> <button data-id="first-tab" onclick="showInfo('eleven-tab')"
+                        class="menu-tab menu-tab-active">Desery</button> </div>
+            </div>
+
 <!-- -->
 <div class="restaurant-menu" id="eleven-tab" style="display: none;">
 
-    <div class="menu-title-info">Desery</div>
+    
     <div class="menu-item">
             <div class="menu-header">
                 <div class="menu-title">LÓD W WAFELKU</div>
@@ -1017,10 +1015,16 @@
 </div>
 <!-- -->
 
+            <div class="karta">
+                <img src="./img/niebieski.png" alt="rozetka" class="img-rozetka">
+                <div class="tekst"> <button data-id="first-tab" onclick="showInfo('twelve-tab')"
+                        class="menu-tab menu-tab-active">napoje</button> </div>
+            </div>
+
 <!-- -->
 <div class="restaurant-menu" id="twelve-tab" style="display: none;">
 
-    <div class="menu-title-info">Napoje</div>
+    
     <div class="menu-item">
             <div class="menu-header">
                 <div class="menu-title">HERBATA Z CYTRYNĄ</div>
@@ -1200,87 +1204,106 @@
         </div>
         </div>
         <!-- -->
-        <!-- -->
-        <div class="restaurant-menu" id="thirteen-tab" style="display: none;">
 
-            <div class="menu-title-info">Drinki alkoholowe</div>
-              <div class="menu-item">
-                      <div class="menu-header">
-                          <div class="menu-title">MALIBU</div>
-                          <div class="menu-desc">Malibu 50 ml/ mleko 100 ml/</div>
-                      </div>
-                      <div class="menu-price">
-                          14 zł
-                      </div>
-              </div>
-                  <div class="menu-item">
-                      <div class="menu-header">
-                          <div class="menu-title">ŚNIEŻNA KULA</div>
-                          <div class="menu-desc">Adwokat 50 ml/ wódka 50 ml/ Sprite 100 ml/</div>
-                      </div>
-                      <div class="menu-price">
-                          16 zł
-                      </div>
-                  </div>
-                  <div class="menu-item">
-                    <div class="menu-header">
-                        <div class="menu-title">TEQUILA SUNRISE</div>
-                        <div class="menu-desc">Tequila 50 ml/ grenandina 10 ml/ sok pomarańczowy 100 ml/</div>
-                    </div>
-                    <div class="menu-price">
-                        18 zł
-                    </div>
+            <div class="karta">
+                <img src="./img/czarny.png" alt="rozetka" class="img-rozetka">
+                <div class="tekst"> <button data-id="first-tab" onclick="showInfo('thirteen-tab')"
+                        class="menu-tab menu-tab-active">Drinki alkoholowe</button> </div>
             </div>
-            <div class="menu-item">
-                <div class="menu-header">
-                    <div class="menu-title">KAMIKAZE /6 KIELISZKÓW/</div>
-                    <div class="menu-desc">Blue Curacao 50 ml/ wódka 80 ml/ sok z cytryny 20 ml/</div>
-                </div>
-                <div class="menu-price">
-                    22 zł
-                </div>
-        </div>
-        <div class="menu-item">
+
+<!-- -->
+<div class="restaurant-menu" id="thirteen-tab" style="display: none;">
+
+    
+      <div class="menu-item">
+              <div class="menu-header">
+                  <div class="menu-title">MALIBU</div>
+                  <div class="menu-desc">Malibu 50 ml/ mleko 100 ml/</div>
+              </div>
+              <div class="menu-price">
+                  14 zł
+              </div>
+      </div>
+          <div class="menu-item">
+              <div class="menu-header">
+                  <div class="menu-title">ŚNIEŻNA KULA</div>
+                  <div class="menu-desc">Adwokat 50 ml/ wódka 50 ml/ Sprite 100 ml/</div>
+              </div>
+              <div class="menu-price">
+                  16 zł
+              </div>
+          </div>
+          <div class="menu-item">
             <div class="menu-header">
-                <div class="menu-title">WŚCIEKŁY PIES</div>
-                <div class="menu-desc">Wódka 15ml/ sok malinowy 10 ml/ Tabasco</div>
+                <div class="menu-title">TEQUILA SUNRISE</div>
+                <div class="menu-desc">Tequila 50 ml/ grenandina 10 ml/ sok pomarańczowy 100 ml/</div>
             </div>
             <div class="menu-price">
-                7 zł
+                18 zł
             </div>
     </div>
-                  
-          </div>
-    <!-- -->
-
-    <!-- -->
-        <div class="restaurant-menu" id="fourteen-tab" style="display: none;">
-
-            <div class="menu-title-info">Grzańce</div>
-            <div class="menu-item">
-                    <div class="menu-header">
-                        <div class="menu-title">GRZANE WINO</div>
-                    </div>
-                    <div class="menu-price">
-                        10 zł
-                    </div>
-            </div>
-                <div class="menu-item">
-                    <div class="menu-header">
-                        <div class="menu-title">PIWO GRZANE</div>
-                    </div>
-                    <div class="menu-price">
-                        14 zł
-                    </div>
-                </div>
-              
-      </div>
+    <div class="menu-item">
+        <div class="menu-header">
+            <div class="menu-title">KAMIKAZE /6 KIELISZKÓW/</div>
+            <div class="menu-desc">Blue Curacao 50 ml/ wódka 80 ml/ sok z cytryny 20 ml/</div>
+        </div>
+        <div class="menu-price">
+            22 zł
+        </div>
+</div>
+<div class="menu-item">
+    <div class="menu-header">
+        <div class="menu-title">WŚCIEKŁY PIES</div>
+        <div class="menu-desc">Wódka 15ml/ sok malinowy 10 ml/ Tabasco</div>
+    </div>
+    <div class="menu-price">
+        7 zł
+    </div>
+</div>
+          
+  </div>
 <!-- -->
 
-      <!-- -->
+            <div class="karta">
+                <img src="./img/czerwone.png" alt="rozetka" class="img-rozetka">
+                <div class="tekst"> <button data-id="first-tab" onclick="showInfo('fourteen-tab')"
+                        class="menu-tab menu-tab-active">Grzańce</button> </div>
+            </div>
+
+ <!-- -->
+ <div class="restaurant-menu" id="fourteen-tab" style="display: none;">
+
+    
+    <div class="menu-item">
+            <div class="menu-header">
+                <div class="menu-title">GRZANE WINO</div>
+            </div>
+            <div class="menu-price">
+                10 zł
+            </div>
+    </div>
+        <div class="menu-item">
+            <div class="menu-header">
+                <div class="menu-title">PIWO GRZANE</div>
+            </div>
+            <div class="menu-price">
+                14 zł
+            </div>
+        </div>
+      
+</div>
+<!-- -->
+
+            <div class="karta">
+                <img src="./img/zielony.png" alt="rozetka" class="img-rozetka">
+                <div class="tekst"> <button data-id="first-tab" onclick="showInfo('fiveteen-tab')"
+                        class="menu-tab menu-tab-active">Piwo</button> </div>
+            </div>
+
+<!-- -->
 <div class="restaurant-menu" id="fiveteen-tab" style="display: none;">
 
-    <div class="menu-title-info">Piwo</div>
+    
     <div class="menu-item">
             <div class="menu-header">
                 <div class="menu-title">TYSKIE Z BECZKI /0,3 L/</div>
@@ -1421,59 +1444,71 @@
         </div>
         <!-- -->
 
-        <!-- -->
-     <div class="restaurant-menu" id="sixteen-tab" style="display: none;">
-
-        <div class="menu-title-info">Wino</div>
-        <div class="menu-item">
-                <div class="menu-header">
-                    <div class="menu-title">MARTINI BIANCO /100 ML/</div>
-                </div>
-                <div class="menu-price">
-                    10 zł
-                </div>
-        </div>
-            <div class="menu-item">
-                <div class="menu-header">
-                    <div class="menu-title">CARLO ROSSI /100 ML/</div>
-                    <div class="menu-desc">Białe, czerwone, różowe.</div>
-                </div>
-                <div class="menu-price">
-                    9 zł
-                </div>
+            <div class="karta">
+                <img src="./img/niebieski.png" alt="rozetka" class="img-rozetka">
+                <div class="tekst"> <button data-id="first-tab" onclick="showInfo('sixteen-tab')"
+                        class="menu-tab menu-tab-active">Wino</button> </div>
             </div>
-            <div class="menu-item">
-              <div class="menu-header">
-                  <div class="menu-title">CARLO ROSSI BUT. /0,7 L/</div>
-              </div>
-              <div class="menu-price">
-                  60 zł
-              </div>
-      </div>
-      <div class="menu-item">
+
+<!-- -->
+<div class="restaurant-menu" id="sixteen-tab" style="display: none;">
+
+   
+    <div class="menu-item">
+            <div class="menu-header">
+                <div class="menu-title">MARTINI BIANCO /100 ML/</div>
+            </div>
+            <div class="menu-price">
+                10 zł
+            </div>
+    </div>
+        <div class="menu-item">
+            <div class="menu-header">
+                <div class="menu-title">CARLO ROSSI /100 ML/</div>
+                <div class="menu-desc">Białe, czerwone, różowe.</div>
+            </div>
+            <div class="menu-price">
+                9 zł
+            </div>
+        </div>
+        <div class="menu-item">
           <div class="menu-header">
-              <div class="menu-title">SZAMPAN DORATO</div>
+              <div class="menu-title">CARLO ROSSI BUT. /0,7 L/</div>
           </div>
           <div class="menu-price">
-              40 zł
+              60 zł
           </div>
-   </div>
-   <div class="menu-item">
+  </div>
+  <div class="menu-item">
       <div class="menu-header">
-          <div class="menu-title">SZAMPAM MARTINI ASTI</div>
+          <div class="menu-title">SZAMPAN DORATO</div>
       </div>
       <div class="menu-price">
-          60 zł
+          40 zł
       </div>
-   </div>
-            
-    </div>
-   <!-- -->
+</div>
+<div class="menu-item">
+  <div class="menu-header">
+      <div class="menu-title">SZAMPAM MARTINI ASTI</div>
+  </div>
+  <div class="menu-price">
+      60 zł
+  </div>
+</div>
+        
+</div>
+<!-- -->
 
-   <!-- -->
+            <div class="karta">
+                <img src="./img/czarny.png" alt="rozetka" class="img-rozetka">
+                <div class="tekst"> <button data-id="first-tab" onclick="showInfo('seventeen-tab')"
+                        class="menu-tab menu-tab-active">Wódka</button> </div>
+            </div>
+
+<!-- -->
 <div class="restaurant-menu" id="seventeen-tab" style="display: none;">
 
-    <div class="menu-title-info">Wódka</div>
+    
     <div class="menu-item">
             <div class="menu-header">
                 <div class="menu-title">BOLS /50 ML/</div>
@@ -1615,8 +1650,9 @@
         <!-- -->
 
         </div>
+    </div>
 
-<footer>
+    <footer>
         <div class="container-footer">
         
           <div class="column-social">
@@ -1681,7 +1717,9 @@
         <p class="footer-copy">© 2023, BrowaChata. All Rights Reserved</p>
         </footer>
 
-        <script src="main.js"></script>
-        
+
+    <script src="main.js"></script>
+
 </body>
+
 </html>

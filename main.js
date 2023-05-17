@@ -49,22 +49,7 @@ document.addEventListener('click', function(event) {
  // Uruchom funkcję po załadowaniu strony
  window.addEventListener('load', changeImage);
 
- //Wymiana tekstu w sekcji menu
- const menuSection = document.querySelectorAll('.restaurant-menu')
- const menuTabs = document.querySelectorAll('.menu-tab')
-
- const showInfo = id => {
-
-     menuSection.forEach(section => section.style.display = 'none')
-     menuTabs.forEach(tab => tab.classList.remove('menu-tab-active'))
-
-     document.getElementById(id).style.display = 'flex'
-
-     const currentActiveButton = document.querySelector('[data-id=${id}]')
-
-     currentActiveButton.classList.add('menu-tab-active')
- }
-
+ 
  //Wymiana zdjęć
  
  function openTab(evt, tabName) {
@@ -81,6 +66,21 @@ document.addEventListener('click', function(event) {
     evt.currentTarget.className += " active";
   }
   
+  //Wymiana tekstu w sekcji menu
+  const menuSection = document.querySelectorAll('.restaurant-menu')
+  const menuTabs = document.querySelectorAll('.menu-tab')
+  
+  const showInfo = id => {
+    const selectedSection = document.getElementById(id);
+    
+    if (selectedSection.style.display === 'flex') {
+      selectedSection.style.display = 'none';
+    } else {
+      menuSection.forEach(section => section.style.display = 'none');
+      selectedSection.style.display = 'flex';
+    }
+  }
+
 
  
  
