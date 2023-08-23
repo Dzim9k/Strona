@@ -11,7 +11,7 @@ body {
 
 
 .container-services {
-  background-color: #FFE6C7;
+   background-color: #FFE6C7;
 }
 
 header {
@@ -999,9 +999,7 @@ footer {
   display: flex;
 }
 
-.img-rozetka {
-  width: 34px;
-}
+
 
 .menu-title {
   white-space: wrap;
@@ -1250,4 +1248,270 @@ footer {
     height: 400px;
   }
 
+}
+
+/*MENU 2*/
+
+.img-rozetka {
+  width: 29px;
+}
+
+.menu-list-left {
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+}
+
+.menu-list {
+  display: flex;
+  align-items: center;
+}
+
+.menu-list:not(:first-child) {
+  padding-top: 8px;
+}
+
+.text-title-menu button{
+  background: none;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 22px;
+  font-family: 'Vollkorn';
+  font-weight: 700;
+  padding-left: 10px;
+}
+
+
+
+
+
+#scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+#scroll-to-top a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#scroll-to-top.active {
+  display: block;
+}
+
+.sticky-element {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px; /* Zmieniłem odległość dla przykładu */
+  right: 20px; /* Dodane, aby umieścić element po prawej stronie */
+}
+
+
+.container-test {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Odstęp między kontenerami */
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.menu-card {
+    width: 210px;
+    height: 270px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    margin: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.menu-card-one {
+    width: 210px;
+    height: 270px;
+    background: url(../img/IMG20230713094602\ \(1\).jpg);
+    object-fit: cover;
+    border: 1px solid #ddd;
+    margin: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.circle-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.circle-img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+.card-info {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    font-size: 19px;
+    margin: 5px 0;
+    font-family: 'Vollkorn';
+  font-style: normal;
+  font-weight: 700;
+  color: #222222;
+}
+
+.card-description {
+    font-size: 15px;
+    margin: 5px 0;
+    font-family: 'Vollkorn';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  color: #999999;
+}
+
+.card-price {
+  padding-top: 20px;
+  font-size: 20px;
+  margin-top: auto;
+  font-family: 'Vollkorn';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  color: #222222;
+}
+
+.card-content h2 {
+  font-family: 'Vollkorn';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  color: #222222;
+}
+
+.card-content p {
+  font-family: 'Vollkorn';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  color: #999999;
+}
+
+.card-title-one {
+  font-size: 19px;
+  margin: 5px 0;
+  font-family: 'Vollkorn';
+font-style: normal;
+font-weight: 700;
+color: white;
+background-color: black;
+border-radius: 5px;
+}
+
+.card-description-one {
+  font-size: 15px;
+  margin: 5px 0;
+  font-family: 'Vollkorn';
+font-style: normal;
+font-weight: 600;
+font-size: 21px;
+color: white;
+background-color: black;
+border-radius: 5px;
+}
+
+.card-price-one {
+margin-top: 20px;
+font-size: 20px;
+font-family: 'Vollkorn';
+font-style: normal;
+font-weight: 600;
+font-size: 21px;
+color: white;
+background-color: black;
+border-radius: 5px;
+}
+
+.card-title-two {
+  font-size: 20px;
+  margin: 5px 0;
+  font-family: 'Vollkorn';
+font-style: normal;
+font-weight: 700;
+color: rgb(198, 209, 36);
+text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.card-description-two {
+  margin: 5px 0;
+  font-family: 'Vollkorn';
+font-style: normal;
+font-weight: 600;
+font-size: 21px;
+color: rgb(198, 209, 36);
+text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.card-price-two {
+margin-top: 20px;
+font-size: 25px;
+font-family: 'Vollkorn';
+font-style: normal;
+font-weight: 600;
+color: rgb(198, 209, 36);
+text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.card-title-three {
+  font-size: 20px;
+  margin: 5px 0;
+  font-family: 'Vollkorn';
+font-style: normal;
+font-weight: 700;
+color: rgb(255, 255, 255);
+text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.card-description-three {
+  margin: 5px 0;
+  font-family: 'Vollkorn';
+font-style: normal;
+font-weight: 600;
+font-size: 21px;
+color: rgb(255, 255, 255);
+text-shadow: black 0.2em 0.1em 0.2em;
+}
+
+.card-price-three {
+margin-top: 20px;
+font-size: 25px;
+font-family: 'Vollkorn';
+font-style: normal;
+font-weight: 600;
+color: rgb(255, 255, 255);
+text-shadow: black 0.1em 0.1em 0.2em;
 }

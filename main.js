@@ -81,6 +81,34 @@ document.addEventListener('click', function(event) {
     }
   }
 
+  // Funkcja do zamykania aktualnie otwartej sekcji menu
+const zamknijAktualneMenu = () => {
+  const otwartaSekcja = document.querySelector('.restaurant-menu[style*="display: flex"]');
+  
+  if (otwartaSekcja) {
+    otwartaSekcja.style.display = 'none';
+  }
+};
+
+// Funkcja do przewinięcia na górę strony
+const przewinNaGórę = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+};
+
+ 
+  
+  
+  
+  
+  
+
+  
+ 
+
+
 
  
  
