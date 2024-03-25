@@ -24,7 +24,7 @@
 <body>
     <header>
 
-        <a href="index.html"><img src="./img/logo1.png" class="logo" alt="Logo Karczma Borowa Chata"></a>
+
         <div class="hamburger">
             <div class="line"></div>
             <div class="line"></div>
@@ -36,7 +36,7 @@
         <nav class="nav-bar">
             <ul>
                 <li><a href="index.html" class="active">Strona Główna</a></li>
-                <li class="nav-dropdown"><a>Menu</a>
+                <li class="nav-dropdown"><a class="arrow">Menu</a>
                     <div class="dropdown">
                         <ul>
                             <li><a href="menu.html">Menu Główne</a></li>
@@ -50,6 +50,7 @@
                         </ul>
                     </div>
                 </li>
+                <a href="index.html"><img src="./img/logo1.png" class="logo" alt="Logo Karczma Borowa Chata"></a>
                 <li><a href="galeria.html">Galeria</a></li>
                 <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
@@ -61,9 +62,10 @@
     <section>
 
         <div class="main-image">
+            <div class="image-filter"></div>
             <div class="main-container">
                 <h3>Witojcie w</h3>
-                <h2>Karczma</h2>
+                <h2>Karczmie</h2>
                 <h2>Borowa Chata</h2>
                 <a href="menu.html">sprawdź Menu</a>
             </div>
@@ -240,7 +242,17 @@
         <p class="footer-copy">© 2023, BrowaChata. All Rights Reserved</p>
     </footer>
 
-
+    <script>
+        // Zmiana tła podczas scrollowania
+        window.addEventListener('scroll', function () {
+            const navBar = document.querySelector('header')
+            if (window.scrollY > 200) {
+                navBar.classList.add('scrolled')
+            } else {
+                navBar.classList.remove('scrolled')
+            }
+        })
+    </script>
     <script src="main.js"></script>
 </body>
 

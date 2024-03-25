@@ -1,27 +1,172 @@
 /*-----------MENU-----------*/
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+}
 
-.menu-header-container {
-	background-image: url(../img/menus.jpg);
+.logo {
+	width: 190px;
+}
+
+.hamburger {
+	display: none;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100px;
 	width: 100%;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
+	z-index: 100;
+	padding: 0 13% 0 13%;
+}
+
+.nav-bar ul {
+	display: flex;
+	align-items: center;
+	list-style: none;
+}
+
+.nav-bar ul li a {
+	display: inline-block;
+	font-size: 1.125rem;
+	font-style: normal;
+	font-family: Yantramanav;
+	font-weight: 900;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 6px 10px;
+	color: white;
+	cursor: pointer;
+}
+
+.nav-bar ul li a:hover {
+	color: #ffa500;
+}
+
+.nav-bar a.active {
+	position: relative;
+}
+
+.nav-bar a.active::after {
+	content: '';
+	position: absolute;
+	bottom: -1px; /* Odsunięcie podkreślenia od tekstu */
+	left: 0;
+	right: 0;
+	height: 2px; /* Wysokość kreski podkreślenia */
+	background-color: #ffa500; /* Kolor kreski podkreślenia */
+	margin: auto; /* Centrowanie kreski */
+}
+
+.nav-bar ul li ul {
+	position: absolute;
+	width: 280px;
+	background: #fff;
+	display: none;
+	border-radius: 10px;
+	padding-top: 1.3rem;
+	padding-bottom: 0.5rem;
+	border: 1px solid black;
+}
+
+.nav-bar ul li ul li a {
+	font-size: 23px;
+	padding-top: 0.6rem;
+	padding-left: 2rem;
+	font-size: 1rem;
+	font-style: normal;
+	font-family: Yantramanav;
+	font-weight: 900;
+	color: black;
+}
+.nav-dropdown .arrow::after {
+	content: '';
+	display: inline-block;
+	margin-left: 5px; /* Odstęp od tekstu */
+	vertical-align: middle; /* Wyśrodkowanie względem tekstu */
+	border-left: 5px solid transparent; /* Lewa strona trójkąta */
+	border-right: 5px solid transparent; /* Prawa strona trójkąta */
+	border-top: 5px solid white; /* Górna strona trójkąta, kolor biały */
+}
+
+.nav-bar .dropdown-active ul {
+	display: initial;
+}
+.menu-header-container {
+	width: 100%;
 	height: 35vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding-top: 80px;
+	position: relative; /* Pozwala na pozycjonowanie tła */
+}
+
+.image-filter-menu {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/menus.jpg); /* Tło z obrazem */
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	filter: brightness(50%); /* Zastosuj pożądany efekt jasności */
+	z-index: -1; /* Upewnij się, że tło jest za tekstami */
 }
 
 .menu-header-section h3 {
 	font-family: 'Vollkorn';
 	font-weight: 700;
-	font-size: clamp(40px, 6vw, 85px);
+	font-size: 4rem;
 	color: #ffffff;
+	position: relative;
+	z-index: 1; /* Upewnij się, że tekst jest na wierzchu */
 }
+#buttons button {
+	margin: 5px;
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
 .container {
+	padding: 2% 14% 5% 14%;
 	display: flex;
-	padding: 3% 20% 3% 20%;
+	flex-direction: column;
+}
+
+.menu-title {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	padding: 3% 0 5% 0;
+}
+
+.menu-title h3 {
+	font-size: 1.875rem;
+	font-weight: normal;
+	margin-bottom: 5px;
+
+	font-family: 'Great Vibes', cursive;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.menu-title h1 {
+	font-size: 2.5rem;
+	font-weight: 700;
+	font-family: 'Vollkorn';
 }
 
 #menuCategories {
@@ -29,43 +174,48 @@
 	flex-direction: column;
 }
 
+.menu-row {
+	display: flex;
+	justify-content: center; /* Centruje przyciski w rzędzie */
+	flex-wrap: wrap; /* Zapewnia zawijanie w przypadku braku miejsca */
+}
+
+.menu-category {
+	display: flex;
+	align-items: center;
+	margin: 3px; /* Odstępy między przyciskami */
+	flex: 1 1 auto; /* Umożliwia elastyczne dopasowanie przycisków w rzędzie */
+	min-width: 120px; /* Minimalna szerokość przycisku */
+}
 #menuCategories button {
 	background: none;
 	border: none;
 	cursor: pointer;
 	white-space: nowrap;
 	font-size: 22px;
-	font-family: 'Vollkorn';
-	font-weight: 650;
+	font-style: normal;
+	font-family: Yantramanav;
+	font-weight: 600;
 }
-
-.menu-category {
-	display: flex;
-	align-items: center;
-}
-
 .menu-category img {
 	width: 26px;
 	margin-right: 10px;
+}
+
+.menu-category.active,
+.menu-category:hover {
+	position: relative; /* Pozwala na wykorzystanie transformacji */
+	top: -3px; /* Podnosi tekst o 3px */
+	font-weight: bold; /* Opcjonalnie pogrubienie tekstu dla lepszej widoczności */
+	text-decoration: underline; /* Dodaje podkreślenie */
+	color: red;
 }
 
 #categoryContent {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	padding-left: 12%;
-}
-
-.menu-title {
-	display: flex;
-	justify-content: center;
-	padding-bottom: 40px;
-}
-
-.title-name {
-	font-size: 30px;
-	font-family: 'Vollkorn';
-	font-weight: 700;
+	padding-top: 1%;
 }
 
 .menu-item {
@@ -73,8 +223,14 @@
 	justify-content: space-between;
 }
 
-.menu-item:not(:first-child) {
-	padding-top: 20px;
+.menu-item:not(:last-child) {
+	border-bottom: 1px solid #ccc; /* Dodaje szarą kreskę jako separator */
+	padding-bottom: 15px; /* Dodaje odstęp na dole każdego elementu */
+	margin-bottom: 15px; /* Dodatkowy odstęp od kreski do kolejnego elementu */
+}
+.menu-item:first-child {
+	border-top: 1px solid #ccc;
+	padding-top: 15px;
 }
 
 .item-description {
@@ -99,8 +255,205 @@
 
 .item-price {
 	white-space: nowrap;
-	white-space: nowrap;
 	font-weight: 600;
 	font-family: 'Oswald';
 	font-size: 20px;
+}
+
+.item-price span {
+	background-color: red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 70px; /* Przykładowa stała szerokość */
+	height: 40px; /* Przykładowa stała wysokość */
+	color: white;
+}
+
+.item-price .test {
+	background-color: blue;
+	color: white;
+	font-family: Yantramanav;
+}
+
+.item-price .test2 {
+	background-color: red;
+	color: white;
+	font-family: 'Oswald';
+}
+
+.item-price .test3 {
+	background-color: yellow;
+	color: black;
+	font-weight: 600;
+	font-family: 'Great Vibes', cursive;
+}
+
+.item-price .test4 {
+	background-color: black;
+	color: white;
+	font-weight: 600;
+	font-family: 'Oswald';
+}
+
+
+.item-price .test4 {
+	background-color: #ff9f0a;
+	color: white;
+	font-weight: 600;
+	font-family: Yantramanav;
+}
+
+/*footer*/
+
+footer {
+	padding-top: 30px;
+	background: #282828;
+}
+
+.container-footer {
+	padding-right: 8%;
+	padding-left: 8%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.logo-footer {
+	width: 145px;
+}
+
+.column-social {
+	display: flex;
+	flex-direction: column;
+}
+
+.social-name {
+	font-family: 'Vollkorn';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	color: #ffffff;
+}
+
+.social-adress {
+	font-family: 'Vollkorn';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	color: #cdaa7c;
+}
+
+.column-menu h2 {
+	font-family: 'Vollkorn';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1.5rem;
+	color: #ffffff;
+	padding-bottom: 5px;
+}
+
+.column-menu {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 10px;
+}
+
+.column-menu a {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	color: #999999;
+}
+
+.column-text {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.column-contact {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.column-contact h2 {
+	font-family: 'Vollkorn';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1.5rem;
+	color: #ffffff;
+	padding-bottom: 5px;
+}
+
+.contact-subtitle {
+	font-family: 'Vollkorn';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 1.3rem;
+	color: #cdaa7c;
+}
+
+.contact-phone {
+	font-family: 'Vollkorn';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 23px;
+	color: #999999;
+}
+
+.contact-email {
+	font-family: 'Vollkorn';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 19px;
+	color: #999999;
+}
+
+.column-opening {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.opening-hours h2 {
+	padding-bottom: 10px;
+	font-family: 'Vollkorn';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1.4rem;
+	color: #ffffff;
+	text-align: center;
+}
+
+.opening-hours {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.2rem;
+	line-height: 26px;
+	color: #999999;
+}
+
+.opening-hours-table tr td {
+	padding: 5px;
+}
+
+.linia-footer {
+	margin-top: 30px;
+	border: 1px solid #6c6c6c;
+	transform: matrix(1, 0, 0, 1, 0, 0);
+	margin-left: 8%;
+	margin-right: 8%;
+}
+
+.footer-copy {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	text-align: center;
+	color: #ffffff;
+	line-height: 50px;
 }
