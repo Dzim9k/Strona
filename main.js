@@ -46,11 +46,6 @@ document.addEventListener('DOMContentLoaded', event => {
 	}
 
 	const observer = new IntersectionObserver(observerCallback, observerOptions)
-
-	// Dodaj obserwowanie dla .content-wrapper i .content-image
-	document.querySelectorAll('.content-wrapper, .content-image').forEach(el => {
-		observer.observe(el)
-	})
 })
 
 document.querySelectorAll('.menu-category').forEach(button => {
@@ -75,3 +70,130 @@ function changeBackground(image, textColor) {
 		button.style.color = textColor
 	})
 }
+//druk
+document.addEventListener('DOMContentLoaded', function () {
+	const checkboxes = document.querySelectorAll('input[type="checkbox"]')
+	const summaryElement = document.getElementById('summary')
+
+	// Aktualizacja kwoty i pogrubienie tekstu
+	checkboxes.forEach(checkbox => {
+		checkbox.addEventListener('change', function () {
+			updateSummary()
+			toggleBold(this)
+		})
+	})
+
+	function updateSummary() {
+		let total = 0
+		// Sumowanie wybranych pozycji
+		checkboxes.forEach(checkbox => {
+			if (checkbox.checked) {
+				total += parseFloat(checkbox.value)
+			}
+		})
+
+		// Aktualizacja kwoty do zapłaty
+		summaryElement.textContent = `Do zapłaty: ${total}zł`
+	}
+
+	function toggleBold(checkbox) {
+		if (checkbox.checked) {
+			checkbox.parentElement.style.fontWeight = 'bold'
+		} else {
+			checkbox.parentElement.style.fontWeight = 'normal'
+		}
+	}
+
+	window.printSummary = function () {
+		// Tworzenie nowego iframe, który nie jest dołączony do DOM
+		const selectedDate = document.getElementById('eventDate').value
+		const printFrame = document.createElement('iframe')
+		printFrame.style.visibility = 'hidden'
+		document.body.appendChild(printFrame)
+
+		// Pobranie dokumentu iframe
+		const printDocument = printFrame.contentWindow.document
+
+		// Przygotowanie treści do wydruku
+		const contentToPrint = `
+        <h1>Podsumowanie zamówienia</h1>
+        <p>Data wydarzenia: ${selectedDate}</p>
+        <div>${document.getElementById('selectedItemsList').innerHTML}</div>
+        <p>${document.getElementById('totalPrice').textContent}</p>
+		`
+
+		// Wypełnianie dokumentu iframe zawartością i dodawanie podstawowych stylów
+		printDocument.write('<html><head><title>Podsumowanie zamówienia</title></head><body>')
+		printDocument.write(contentToPrint)
+		printDocument.write('</body></html>')
+		printDocument.close()
+
+		// Dodawanie podstawowych stylów do treści, która ma być wydrukowana
+		const styles = printDocument.createElement('style')
+		styles.type = 'text/css'
+		styles.innerHTML = `
+			body { font-family: Arial, sans-serif; }
+			h1 { color: #333; }
+			div, p { margin-bottom: 10px; }
+		`
+		printDocument.head.appendChild(styles)
+
+		// Wydrukowanie zawartości iframe i usunięcie go po zakończeniu
+		printFrame.contentWindow.onafterprint = function () {
+			document.body.removeChild(printFrame)
+		}
+		printFrame.contentWindow.print()
+	}
+})
+
+document.addEventListener('DOMContentLoaded', function () {
+	const checkboxes = document.querySelectorAll('input[type="checkbox"]')
+	const selectedItemsList = document.getElementById('selectedItemsList')
+
+	const totalPriceElement = document.getElementById('totalPrice')
+
+	checkboxes.forEach(checkbox => {
+		checkbox.addEventListener('change', function () {
+			updateSelectedItems()
+			updateTotalPrice()
+		})
+	})
+
+	function updateSelectedItems() {
+		selectedItemsList.innerHTML = '' // Czyszczenie listy
+		const itemsByCategory = {}
+
+		checkboxes.forEach(checkbox => {
+			if (checkbox.checked) {
+				const category = checkbox.getAttribute('data-category')
+				const itemText = checkbox.getAttribute('data-name')
+				if (!itemsByCategory[category]) {
+					itemsByCategory[category] = []
+				}
+				itemsByCategory[category].push(itemText)
+			}
+		})
+
+		// Tworzenie listy pozycji z podziałem na kategorie
+		for (const [category, items] of Object.entries(itemsByCategory)) {
+			const categoryDiv = document.createElement('div')
+			categoryDiv.innerHTML = `<strong>${category}:</strong>`
+			items.forEach(item => {
+				const itemDiv = document.createElement('div')
+				itemDiv.textContent = item
+				categoryDiv.appendChild(itemDiv)
+			})
+			selectedItemsList.appendChild(categoryDiv)
+		}
+	}
+
+	function updateTotalPrice() {
+		let total = 0
+		checkboxes.forEach(checkbox => {
+			if (checkbox.checked) {
+				total += parseFloat(checkbox.value)
+			}
+		})
+		totalPriceElement.textContent = `Suma: ${total}zł`
+	}
+})

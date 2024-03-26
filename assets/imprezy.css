@@ -1,0 +1,84 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 20px;
+	padding: 0;
+	background-color: #f5f5f5;
+}
+
+h1,
+h2 {
+	color: #333;
+}
+
+.kontener {
+	padding: 10% 5% 5% 5%;
+}
+
+#selectedItemsList > div {
+	margin-bottom: 10px;
+}
+
+#selectedItemsList div div {
+	padding-left: 20px;
+}
+
+form#menuForm {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form#menuForm label {
+	display: block;
+	margin-bottom: 10px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+form#menuForm label input[type='checkbox'] {
+	margin-right: 10px;
+}
+
+#summary {
+	margin-top: 20px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #007bff;
+}
+
+button {
+	background-color: #007bff;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+button:hover {
+	background-color: #0056b3;
+}
+#selectedItemsContainer {
+	position: fixed; /* Przypięcie do pozycji */
+	top: 100px; /* Odległość od góry */
+	right: 20px; /* Odległość od prawej strony */
+	width: 300px; /* Szerokość kontenera */
+	background-color: #f9f9f9; /* Tło kontenera */
+	padding: 15px; /* Wewnętrzny odstęp */
+	border-radius: 5px; /* Zaokrąglenie narożników */
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Cień dla lepszego wyróżnienia */
+	z-index: 1000; /* Upewnienie się, że kontener jest zawsze na wierzchu */
+}
+
+#selectedItemsList {
+	max-height: 400px; /* Maksymalna wysokość listy */
+	overflow-y: auto; /* Dodanie paska przewijania gdy lista jest dłuższa */
+	margin-bottom: 20px; /* Odstęp od sumy ceny */
+}
+
+#totalPrice {
+	text-align: right; /* Wyrównanie sumy ceny do prawej */
+	font-weight: bold; /* Pogrubienie tekstu */
+}

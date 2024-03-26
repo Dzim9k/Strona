@@ -14,7 +14,6 @@
 }
 
 header {
-	transition: background-color 0.5s ease, padding 0.5s ease;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -25,6 +24,7 @@ header {
 	width: 100%;
 	z-index: 100;
 	padding: 0 13% 0 13%;
+	background: rgb(0, 0, 0, 0.6);
 }
 .scrolled {
 	background-color: red; /* Przykładowe tło, można dostosować */
